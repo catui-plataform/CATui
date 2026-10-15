@@ -1,0 +1,23 @@
+{
+  "id": "flycast",
+  "title": "Flycast",
+  "author": "Flycast",
+  "system": "Dreamcast",
+  "filename": "flycast_libretro.dll",
+  "description": "Dreamcast emulator.",
+  "extensions": [
+    "chd",
+    "cdi",
+    "elf",
+    "bin",
+    "cue",
+    "gdi",
+    "lst",
+    "zip",
+    "dat",
+    "7z",
+    "m3u"
+  ],
+  "repository": "https://github.com/flyinghead/flycast",
+  "icon": "icon.png"
+}

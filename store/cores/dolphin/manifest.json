@@ -1,0 +1,25 @@
+{
+  "id": "dolphin",
+  "title": "Dolphin",
+  "author": "Dolphin",
+  "system": "GameCube / Wii",
+  "filename": "dolphin_libretro.dll",
+  "description": "GameCube and Wii emulator.",
+  "extensions": [
+    "gcm",
+    "iso",
+    "wbfs",
+    "ciso",
+    "gcz",
+    "elf",
+    "dol",
+    "dff",
+    "tgc",
+    "wad",
+    "rvz",
+    "m3u",
+    "wia"
+  ],
+  "repository": "https://github.com/libretro/dolphin",
+  "icon": "icon.png"
+}

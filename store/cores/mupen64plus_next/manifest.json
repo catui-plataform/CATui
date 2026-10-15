@@ -1,0 +1,1 @@
+{"id":"mupen64plus_next","title":"Mupen64Plus-Next","author":"Mupen64Plus-Next","system":"N64","description":"Nintendo 64 emulator.","extensions":["n64","z64","v64"],"repository":"https://github.com/libretro/mupen64plus-libretro-nx","icon":"icon.png"}

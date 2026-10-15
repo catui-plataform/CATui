@@ -1,0 +1,7 @@
+*.dll binary
+*.exe binary
+*.zip binary
+*.png binary
+*.json text eol=lf
+*.mjs text eol=lf
+*.md text eol=lf

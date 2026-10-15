@@ -1,0 +1,1 @@
+{"id":"melonds","title":"melonDS","author":"melonDS","system":"NDS","description":"Nintendo DS emulator.","extensions":["nds","dsi"],"repository":"https://github.com/libretro/melonDS","icon":"icon.png"}

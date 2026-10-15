@@ -1,0 +1,1 @@
+{"id":"pcsx2","title":"PCSX2 CATui","author":"PCSX2","system":"PS2","description":"PlayStation 2 emulator. Requires BIOS.","extensions":["elf","iso","ciso","cue","bin","gz","chd","cso","zso","mdf","nrg","dump"],"repository":"https://github.com/PCSX2/pcsx2","icon":"icon.png"}

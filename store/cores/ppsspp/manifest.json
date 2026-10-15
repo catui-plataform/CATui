@@ -1,0 +1,18 @@
+{
+  "id": "ppsspp",
+  "title": "PPSSPP",
+  "author": "PPSSPP",
+  "system": "PSP",
+  "filename": "ppsspp_libretro.dll",
+  "description": "PSP emulator.",
+  "extensions": [
+    "elf",
+    "iso",
+    "cso",
+    "prx",
+    "pbp",
+    "chd"
+  ],
+  "repository": "https://github.com/hrydgard/ppsspp",
+  "icon": "icon.png"
+}

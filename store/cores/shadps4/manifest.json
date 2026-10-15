@@ -1,0 +1,1 @@
+{ "title": "shadPS4", "author": "shadPS4 CATUI", "version": "0.20.0", "system": "ps4", "filename": "shadps4_catui.zip", "description": "PlayStation 4 emulator.", "extensions": ["pkg", "fpkg", "elf", "self", "iso", "folder"], "packageType": "archive", "entryFilename": "shadps4_libretro.dll", "repository": "https://github.com/shadps4-emu/shadPS4", "icon": "icon.png" }

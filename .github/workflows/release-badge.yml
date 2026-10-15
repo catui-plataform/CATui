@@ -1,0 +1,48 @@
+name: Update release badge
+
+on:
+  release:
+    types: [published, edited, deleted, unpublished]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-badge
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Refresh latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64, json, os, subprocess
+
+          def api(path, payload=None):
+              args = ['gh', 'api', path]
+              if payload is not None:
+                  args += ['--method', 'PUT', '--input', '-']
+              result = subprocess.run(args, input=json.dumps(payload) if payload else None,
+                                      text=True, capture_output=True, check=True, timeout=30)
+              return json.loads(result.stdout)
+
+          repo = os.environ['GITHUB_REPOSITORY']
+          releases = api(f'repos/{repo}/releases?per_page=100')
+          published = [r for r in releases if not r['draft'] and r['published_at']]
+          latest = max(published, key=lambda r: r['published_at'], default=None)
+          badge = dict(schemaVersion=1, label='Latest release',
+                       message=latest['tag_name'] if latest else 'none', color='7CB342')
+          path = f'repos/{repo}/contents/.github/badges/release.json'
+          current = api(path + '?ref=main')
+          if json.loads(base64.b64decode(current['content'])) != badge:
+              content = base64.b64encode((json.dumps(badge, indent=2) + '\n').encode()).decode()
+              api(path, dict(message='Update latest release badge', content=content,
+                             sha=current['sha'], branch='main'))
+          print('Latest release:', badge['message'])
+          PY

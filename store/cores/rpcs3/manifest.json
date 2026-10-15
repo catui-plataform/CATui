@@ -1,0 +1,18 @@
+{
+  "id": "rpcs3",
+  "title": "RPCS3",
+  "author": "RPCS3 CATUI",
+  "system": "PS3",
+  "filename": "rpcs3_catui.zip",
+  "description": "PlayStation 3 emulator. Requires firmware.",
+  "extensions": [
+    "elf",
+    "self",
+    "bin",
+    "iso"
+  ],
+  "packageType": "archive",
+  "entryFilename": "rpcs3/rpcs3_libretro.dll",
+  "repository": "https://github.com/RPCS3/rpcs3",
+  "icon": "icon.svg"
+}

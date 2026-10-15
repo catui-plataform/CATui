@@ -1,0 +1,19 @@
+{
+  "id": "cemu",
+  "title": "Cemu",
+  "author": "Cemu",
+  "system": "Wii U",
+  "filename": "cemu_libretro.dll",
+  "description": "Wii U emulator.",
+  "extensions": [
+    "wud",
+    "wux",
+    "wua",
+    "iso",
+    "rpx",
+    "elf",
+    "tmd"
+  ],
+  "repository": "https://github.com/cemu-project/Cemu",
+  "icon": "icon.png"
+}
