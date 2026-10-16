@@ -419,7 +419,6 @@ static struct retro_core_option_v2_definition option_definitions[] = {
             {"immediate", "Immediate (Fastest)"},
             {"balanced", "Balanced"},
             {"accurate", "Accurate"},
-            {"strict", "Strict"},
             {nullptr, nullptr}
         },
         "default"
@@ -572,7 +571,7 @@ static const struct retro_variable legacy_variables[] = {
     {"eden_nvdec", "Video Decoding; gpu|cpu|off"},
     {"eden_astc_recompression", "ASTC Recompression; uncompressed|bc1|bc3"},
     {"eden_dma_accuracy", "DMA Accuracy; default|unsafe|safe"},
-    {"eden_gpu_fence", "GPU Fence Behavior; default|immediate|balanced|accurate|strict"},
+    {"eden_gpu_fence", "GPU Fence Behavior; default|immediate|balanced|accurate"},
     {"eden_reactive_flushing", "Reactive Flushing; enabled|disabled"},
     {"eden_barrier_feedback", "Barrier Feedback Loops; enabled|disabled"},
     {"eden_region", "System Region; usa|europe|japan|australia|china|korea|taiwan"},
@@ -801,7 +800,6 @@ void Environment::UpdateVariables() {
         if (fence_str == "immediate") fence = Settings::GpuFenceBehavior::Immediate;
         else if (fence_str == "balanced") fence = Settings::GpuFenceBehavior::Balanced;
         else if (fence_str == "accurate") fence = Settings::GpuFenceBehavior::Accurate;
-        else if (fence_str == "strict") fence = Settings::GpuFenceBehavior::Strict;
         Settings::values.gpu_fence_behavior.SetValue(fence);
     } else {
         Settings::values.gpu_fence_behavior.SetValue(Settings::GpuFenceBehavior::Default);

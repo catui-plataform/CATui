@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: Copyright 2026 Eden Emulator Project
 // SPDX-License-Identifier: GPL-3.0-or-later
 
+#include "core/loader/loader.h"
 #include "eden_libretro/libretro_core.h"
 
 #include <algorithm>
@@ -499,6 +500,17 @@ bool LibretroSession::LoadGame(const char* filepath) {
     // Libretro frontends serialize lifecycle calls. Unload before taking the
     // per-frame mutex: UnloadGame() takes the same lock and the old ordering
     // deadlocked when a frontend reused the core for a second title.
+    // Reject unsupported content before allocating the emulation/GPU system.
+    // Invalid NSP/XCI data must be a normal load error, including in headless hosts.
+    auto preflight_vfs = std::make_shared<FileSys::RealVfsFilesystem>();
+    const auto preflight_file = preflight_vfs->OpenFile(filepath, FileSys::OpenMode::Read);
+    const auto preflight_type = preflight_file ? Loader::IdentifyFile(preflight_file)
+                                              : Loader::FileType::Error;
+    if (preflight_type == Loader::FileType::Error || preflight_type == Loader::FileType::Unknown) {
+        LOG_ERROR(Frontend, "Unsupported or invalid content: {}", filepath);
+        return false;
+    }
+
     if (is_game_loaded) {
         UnloadGame();
     }

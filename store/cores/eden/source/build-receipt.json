@@ -1,0 +1,69 @@
+{
+  "plan": {
+    "core": "eden",
+    "expires": 1792263568,
+    "id": "c7718069a381caec41061168",
+    "owner": "474757466304020490",
+    "sha": "d8c6c59b679867d2595fdc0953df033475e23380",
+    "store_head": "735830d430a0f68c7a2f8cd7e3be352ce0bb0b98",
+    "version": "d8c6c59b6798"
+  },
+  "sha256": "3db7b4c7f3c4ec49a3883ea683a326962d06fec2a76f51d44fd21603490a9e68",
+  "size": 31309824,
+  "filename": "eden_libretro.dll",
+  "abi": true,
+  "runtime": {
+    "core": "eden",
+    "passed": true,
+    "gameplayTested": false,
+    "evidence": [
+      {
+        "layer": "native",
+        "log": "native.log",
+        "scope": "identity/options/initialization/rejected-content/cleanup",
+        "sha256": "711fba56de05b2ea2185d1aea1d5d3843b76ab66d0d43abb37845fa1641e22e2"
+      },
+      {
+        "layer": "catui",
+        "log": "catui.log",
+        "scope": "LibretroSession/headless/initialization/rejected-content/cleanup",
+        "sha256": "48833c201b0097d80e9a1a1049b0a69e0e97b6d05a014713f13570de11068c3b"
+      }
+    ]
+  },
+  "systemImports": [],
+  "integrationReview": {
+    "decision": "needs_review",
+    "summary": "The CATui libretro environment exposes core options and settings that are out of sync with the approved upstream changes: it still offers GpuFenceBehavior::Strict and 'strict' values removed upstream, keeps AudioEngine Oboe related handling while upstream removed Oboe, and defines AnisotropyMode entries beyond upstream's list. These option/ABI mismatches need alignment before continuing.",
+    "risks": [
+      "Core option 'eden_gpu_fence' still maps to Settings::GpuFenceBehavior::Strict, which the upstream enum diff removes, causing an invalid/unknown enum value.",
+      "Legacy and v2 option lists expose values (e.g. strict) not present in upstream settings_enums, risking option write failures or unsupported configuration.",
+      "Audio engine handling may reference Oboe sink/engine values removed in the upstream sink_details/settings_enums changes."
+    ],
+    "target": "d8c6c59b679867d2595fdc0953df033475e23380",
+    "base": "2000fdfb7b27e5e2546098b44268fc74887b22a5",
+    "patchSha256": "8e6007722f22776c998877823fff49c1f62b596f5f1005cea1a3c9b9488b42d8",
+    "model": "deepseek-flash",
+    "effort": "standard",
+    "usage": {
+      "prompt_tokens": 31555,
+      "completion_tokens": 196,
+      "total_tokens": 31751,
+      "prompt_cache_hit_tokens": 31360,
+      "prompt_cache_miss_tokens": 195
+    }
+  },
+  "sourceFixFiles": [
+    "src/eden_libretro/libretro_core.cpp"
+  ],
+  "aiRepairFiles": [
+    "src/common/settings_enums.h",
+    "src/core/hle/service/am/frontend/applets.cpp",
+    "src/video_core/renderer_base.cpp",
+    "src/video_core/renderer_vulkan/renderer_vulkan.cpp",
+    "src/common/sparse_large_vector.cpp",
+    "src/common/zbic_compression.cpp",
+    "src/core/launch_params.cpp",
+    "src/eden_libretro/environment.cpp"
+  ]
+}

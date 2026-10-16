@@ -1,1 +1,18 @@
-{"id":"eden","title":"Eden","author":"Eden","system":"Switch","description":"Nintendo Switch emulator. Requires prod.keys and firmware.","extensions":["nsp","xci","nro","nca","nso"],"repository":"https://git.eden-emu.dev/eden-emu/eden","icon":"icon.png"}
+{
+  "id": "eden",
+  "title": "Eden",
+  "author": "Eden",
+  "system": "Switch",
+  "description": "Nintendo Switch emulator. Requires prod.keys and firmware.",
+  "extensions": [
+    "nsp",
+    "xci",
+    "nro",
+    "nca",
+    "nso"
+  ],
+  "repository": "https://git.eden-emu.dev/eden-emu/eden",
+  "icon": "icon.png",
+  "version": "d8c6c59b6798",
+  "upstreamCommit": "d8c6c59b679867d2595fdc0953df033475e23380"
+}

@@ -1,22 +1,8 @@
-diff --git a/AGENTS.md b/AGENTS.md
-deleted file mode 100644
-index aabea771..00000000
---- a/AGENTS.md
-+++ /dev/null
-@@ -1 +0,0 @@
--AI and LLM use is *strictly* prohibited within our codebase and surrounding community, including issues and comments. This includes using AI or LLMs to write docs/commit messages, debug issues, brainstorm ideas, research concepts, or search the codebase.
-diff --git a/CLAUDE.md b/CLAUDE.md
-deleted file mode 100644
-index aabea771..00000000
---- a/CLAUDE.md
-+++ /dev/null
-@@ -1 +0,0 @@
--AI and LLM use is *strictly* prohibited within our codebase and surrounding community, including issues and comments. This includes using AI or LLMs to write docs/commit messages, debug issues, brainstorm ideas, research concepts, or search the codebase.
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 4254b18d..9bc05f1c 100644
+index f647204..00c6a71 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -70,6 +70,7 @@ if (YUZU_STATIC_ROOM)
+@@ -71,6 +71,7 @@ if (YUZU_STATIC_ROOM)
  endif()
  
  # qt stuff
@@ -26,7 +12,7 @@ index 4254b18d..9bc05f1c 100644
  option(ENABLE_UPDATE_CHECKER "Enable update checker (for Qt and Android)" OFF)
 diff --git a/externals/glslang/include/glslang/Include/ResourceLimits.h b/externals/glslang/include/glslang/Include/ResourceLimits.h
 new file mode 100644
-index 00000000..b36c8d62
+index 0000000..b36c8d6
 --- /dev/null
 +++ b/externals/glslang/include/glslang/Include/ResourceLimits.h
 @@ -0,0 +1,159 @@
@@ -191,7 +177,7 @@ index 00000000..b36c8d62
 +#endif // _RESOURCE_LIMITS_INCLUDED_
 diff --git a/externals/glslang/include/glslang/Include/glslang_c_interface.h b/externals/glslang/include/glslang/Include/glslang_c_interface.h
 new file mode 100644
-index 00000000..41d0da9b
+index 0000000..41d0da9
 --- /dev/null
 +++ b/externals/glslang/include/glslang/Include/glslang_c_interface.h
 @@ -0,0 +1,300 @@
@@ -497,7 +483,7 @@ index 00000000..41d0da9b
 +#endif /* #ifdef GLSLANG_C_IFACE_INCLUDED */
 diff --git a/externals/glslang/include/glslang/Include/glslang_c_shader_types.h b/externals/glslang/include/glslang/Include/glslang_c_shader_types.h
 new file mode 100644
-index 00000000..ab91648b
+index 0000000..ab91648
 --- /dev/null
 +++ b/externals/glslang/include/glslang/Include/glslang_c_shader_types.h
 @@ -0,0 +1,237 @@
@@ -740,7 +726,7 @@ index 00000000..ab91648b
 +#endif
 diff --git a/externals/glslang/include/glslang/Include/visibility.h b/externals/glslang/include/glslang/Include/visibility.h
 new file mode 100644
-index 00000000..dd32351f
+index 0000000..dd32351
 --- /dev/null
 +++ b/externals/glslang/include/glslang/Include/visibility.h
 @@ -0,0 +1,58 @@
@@ -804,7 +790,7 @@ index 00000000..dd32351f
 +#endif
 diff --git a/externals/glslang/include/glslang/MachineIndependent/Versions.h b/externals/glslang/include/glslang/MachineIndependent/Versions.h
 new file mode 100644
-index 00000000..1949c0ae
+index 0000000..1949c0a
 --- /dev/null
 +++ b/externals/glslang/include/glslang/MachineIndependent/Versions.h
 @@ -0,0 +1,433 @@
@@ -1243,7 +1229,7 @@ index 00000000..1949c0ae
 +#endif // _VERSIONS_INCLUDED_
 diff --git a/externals/glslang/include/glslang/Public/ResourceLimits.h b/externals/glslang/include/glslang/Public/ResourceLimits.h
 new file mode 100644
-index 00000000..8245e12d
+index 0000000..8245e12
 --- /dev/null
 +++ b/externals/glslang/include/glslang/Public/ResourceLimits.h
 @@ -0,0 +1,58 @@
@@ -1307,7 +1293,7 @@ index 00000000..8245e12d
 +#endif  // _STAND_ALONE_RESOURCE_LIMITS_INCLUDED_
 diff --git a/externals/glslang/include/glslang/Public/ShaderLang.h b/externals/glslang/include/glslang/Public/ShaderLang.h
 new file mode 100644
-index 00000000..dc682855
+index 0000000..dc68285
 --- /dev/null
 +++ b/externals/glslang/include/glslang/Public/ShaderLang.h
 @@ -0,0 +1,1061 @@
@@ -2374,7 +2360,7 @@ index 00000000..dc682855
 +#endif // _COMPILER_INTERFACE_INCLUDED_
 diff --git a/externals/glslang/include/glslang/Public/resource_limits_c.h b/externals/glslang/include/glslang/Public/resource_limits_c.h
 new file mode 100644
-index 00000000..4ad052b0
+index 0000000..4ad052b
 --- /dev/null
 +++ b/externals/glslang/include/glslang/Public/resource_limits_c.h
 @@ -0,0 +1,58 @@
@@ -2438,7 +2424,7 @@ index 00000000..4ad052b0
 +#endif // _STAND_ALONE_RESOURCE_LIMITS_C_INCLUDED_
 diff --git a/externals/glslang/include/glslang/SPIRV/GlslangToSpv.h b/externals/glslang/include/glslang/SPIRV/GlslangToSpv.h
 new file mode 100644
-index 00000000..1abf5a22
+index 0000000..1abf5a2
 --- /dev/null
 +++ b/externals/glslang/include/glslang/SPIRV/GlslangToSpv.h
 @@ -0,0 +1,70 @@
@@ -2514,7 +2500,7 @@ index 00000000..1abf5a22
 +}
 diff --git a/externals/glslang/include/glslang/SPIRV/Logger.h b/externals/glslang/include/glslang/SPIRV/Logger.h
 new file mode 100644
-index 00000000..c64a3b8a
+index 0000000..c64a3b8
 --- /dev/null
 +++ b/externals/glslang/include/glslang/SPIRV/Logger.h
 @@ -0,0 +1,75 @@
@@ -2595,7 +2581,7 @@ index 00000000..c64a3b8a
 +#endif // GLSLANG_SPIRV_LOGGER_H
 diff --git a/externals/glslang/include/glslang/SPIRV/SpvTools.h b/externals/glslang/include/glslang/SPIRV/SpvTools.h
 new file mode 100644
-index 00000000..6d72beb0
+index 0000000..6d72beb
 --- /dev/null
 +++ b/externals/glslang/include/glslang/SPIRV/SpvTools.h
 @@ -0,0 +1,109 @@
@@ -2710,7 +2696,7 @@ index 00000000..6d72beb0
 +#endif // GLSLANG_SPV_TOOLS_H
 diff --git a/externals/glslang/include/glslang/SPIRV/disassemble.h b/externals/glslang/include/glslang/SPIRV/disassemble.h
 new file mode 100644
-index 00000000..3bded14f
+index 0000000..3bded14
 --- /dev/null
 +++ b/externals/glslang/include/glslang/SPIRV/disassemble.h
 @@ -0,0 +1,55 @@
@@ -2771,7 +2757,7 @@ index 00000000..3bded14f
 +#endif // disassembler_H
 diff --git a/externals/glslang/include/glslang/SPIRV/spirv.hpp11 b/externals/glslang/include/glslang/SPIRV/spirv.hpp11
 new file mode 100644
-index 00000000..6597cef1
+index 0000000..6597cef
 --- /dev/null
 +++ b/externals/glslang/include/glslang/SPIRV/spirv.hpp11
 @@ -0,0 +1,5755 @@
@@ -8532,7 +8518,7 @@ index 00000000..6597cef1
 +
 diff --git a/externals/glslang/include/glslang/build_info.h b/externals/glslang/include/glslang/build_info.h
 new file mode 100644
-index 00000000..376fb07b
+index 0000000..376fb07
 --- /dev/null
 +++ b/externals/glslang/include/glslang/build_info.h
 @@ -0,0 +1,62 @@
@@ -8599,7 +8585,7 @@ index 00000000..376fb07b
 +
 +#endif // GLSLANG_BUILD_INFO
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index a2abc7d1..31f6c466 100644
+index a2abc7d..31f6c46 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
 @@ -290,6 +290,10 @@ if (ENABLE_WEB_SERVICE)
@@ -8614,10 +8600,10 @@ index a2abc7d1..31f6c466 100644
      add_subdirectory(android/app/src/main/jni)
      target_include_directories(yuzu-android PRIVATE android/app/src/main)
 diff --git a/src/audio_core/sink/sink_details.cpp b/src/audio_core/sink/sink_details.cpp
-index 1b737eb1..02fc4b9f 100644
+index efd8fce..65067bf 100644
 --- a/src/audio_core/sink/sink_details.cpp
 +++ b/src/audio_core/sink/sink_details.cpp
-@@ -91,7 +91,19 @@ constexpr SinkDetails sink_details[] = {
+@@ -72,7 +72,19 @@ constexpr SinkDetails sink_details[] = {
      },
  };
  
@@ -8637,7 +8623,7 @@ index 1b737eb1..02fc4b9f 100644
      const auto find_backend{[](Settings::AudioEngine id) {
          return std::find_if(std::begin(sink_details), std::end(sink_details),
                              [&id](const auto& sink_detail) { return sink_detail.id == id; });
-@@ -100,39 +112,16 @@ const SinkDetails& GetOutputSinkDetails(Settings::AudioEngine sink_id) {
+@@ -81,39 +93,16 @@ const SinkDetails& GetOutputSinkDetails(Settings::AudioEngine sink_id) {
      auto iter = find_backend(sink_id);
  
      if (sink_id == Settings::AudioEngine::Auto) {
@@ -8678,7 +8664,7 @@ index 1b737eb1..02fc4b9f 100644
      }
  
      if (iter == std::end(sink_details)) {
-@@ -161,4 +150,8 @@ std::unique_ptr<Sink> CreateSinkFromID(Settings::AudioEngine sink_id, std::strin
+@@ -142,4 +131,8 @@ std::unique_ptr<Sink> CreateSinkFromID(Settings::AudioEngine sink_id, std::strin
      return GetOutputSinkDetails(sink_id).factory(device_id);
  }
  
@@ -8688,7 +8674,7 @@ index 1b737eb1..02fc4b9f 100644
 +
  } // namespace AudioCore::Sink
 diff --git a/src/audio_core/sink/sink_details.h b/src/audio_core/sink/sink_details.h
-index c8498842..f9ca8418 100644
+index c849884..f9ca841 100644
 --- a/src/audio_core/sink/sink_details.h
 +++ b/src/audio_core/sink/sink_details.h
 @@ -3,6 +3,7 @@
@@ -8708,7 +8694,7 @@ index c8498842..f9ca8418 100644
  } // namespace Sink
  } // namespace AudioCore
 diff --git a/src/audio_core/sink/sink_stream.cpp b/src/audio_core/sink/sink_stream.cpp
-index c70020e9..40085b51 100644
+index c70020e..40085b5 100644
 --- a/src/audio_core/sink/sink_stream.cpp
 +++ b/src/audio_core/sink/sink_stream.cpp
 @@ -23,7 +23,7 @@
@@ -8721,89 +8707,56 @@ index c70020e9..40085b51 100644
  
      constexpr s32 min = (std::numeric_limits<s16>::min)();
 diff --git a/src/common/settings_enums.h b/src/common/settings_enums.h
-index 3d0131de..0c847fc8 100644
+index eaf3ec5..13e140b 100644
 --- a/src/common/settings_enums.h
 +++ b/src/common/settings_enums.h
 @@ -92,7 +92,7 @@ struct EnumMetadata {
  // AudioEngine must be specified discretely due to having existing but slightly different
  // canonicalizations
  // TODO (lat9nq): Remove explicit definition of AudioEngine/sink_id
--enum class AudioEngine : u32 { Auto, Cubeb, Sdl3, Null, Oboe, };
-+enum class AudioEngine : u32 { Auto, Cubeb, Sdl3, Null, Oboe, Libretro, };
+-enum class AudioEngine : u32 { Auto, Cubeb, Sdl3, Null, };
++enum class AudioEngine : u32 { Auto, Cubeb, Sdl3, Null, Libretro, };
  template<>
  inline std::vector<std::pair<std::string_view, AudioEngine>> EnumMetadata<AudioEngine>::Canonicalizations() {
      return {
 @@ -100,6 +100,7 @@ inline std::vector<std::pair<std::string_view, AudioEngine>> EnumMetadata<AudioE
          {"cubeb", AudioEngine::Cubeb},
          {"sdl3", AudioEngine::Sdl3},
-         {"null", AudioEngine::Null}, {"oboe", AudioEngine::Oboe},
+         {"null", AudioEngine::Null},
 +        {"libretro", AudioEngine::Libretro},
      };
  }
  /// @brief This is just a sufficiently large number that is more than the number of other enums declared here
-diff --git a/src/core/frontend/applets/controller.cpp b/src/core/frontend/applets/controller.cpp
-index c4292c5a..e5358668 100644
---- a/src/core/frontend/applets/controller.cpp
-+++ b/src/core/frontend/applets/controller.cpp
-@@ -12,6 +12,7 @@
- #include "hid_core/frontend/emulated_controller.h"
- #include "hid_core/hid_core.h"
- #include "hid_core/hid_types.h"
-+#include <array>
+diff --git a/src/common/sparse_large_vector.cpp b/src/common/sparse_large_vector.cpp
+index eee8ff6..b963409 100644
+--- a/src/common/sparse_large_vector.cpp
++++ b/src/common/sparse_large_vector.cpp
+@@ -26,7 +26,7 @@ static std::mutex vector_regions_mutex {};
+ // Workaround for handling non-commited memory accessed by Dynarmic; usually result of an error
+ static LONG WINAPI FakePageFaultHandler(PEXCEPTION_POINTERS info) {
+     DWORD code = info->ExceptionRecord->ExceptionCode;
+-    u64 exception_addr = reinterpret_cast<u64>(info->ExceptionRecord->ExceptionInformation[1]);
++    u64 exception_addr = static_cast<u64>(info->ExceptionRecord->ExceptionInformation[1]);
  
- namespace Core::Frontend {
+     if (code != EXCEPTION_ACCESS_VIOLATION || info->ExceptionRecord->ExceptionInformation[0] == 1) {
+         // Not our problem
+diff --git a/src/common/zbic_compression.cpp b/src/common/zbic_compression.cpp
+index 5e0e4d9..31f5475 100644
+--- a/src/common/zbic_compression.cpp
++++ b/src/common/zbic_compression.cpp
+@@ -16,6 +16,10 @@
+ #undef _GNU_SOURCE
+ #endif
  
-@@ -29,23 +30,39 @@ void DefaultControllerApplet::ReconfigureControllers(ReconfigureCallback callbac
- 
-     const std::size_t min_supported_players =
-         parameters.enable_single_mode ? 1 : parameters.min_players;
--
--    // Disconnect Handheld first.
-+    using Core::HID::NpadStyleIndex;
-+    const std::size_t max_supported_players = parameters.enable_single_mode ? 1 : parameters.max_players;
-+    std::size_t num_selected_players = 0;
-+    std::array<bool, HID::HIDCore::available_controllers> keep_connected{};
++#ifdef _MSC_VER
++#pragma warning(disable : 4505)
++#endif
 +
-+    // reserve existing AND valid players before filling slots. include Handheld, but not other
-+    for (std::size_t index = 0; index < hid_core.available_controllers - 1; ++index) {
-+        const auto* controller = hid_core.GetEmulatedControllerByIndex(index);
-+        if (!parameters.keep_controllers_connected || !controller->IsConnected() || num_selected_players >= max_supported_players) continue;
-+
-+        const auto style = controller->GetNpadStyleIndex();
-+        keep_connected[index] =
-+            (style == NpadStyleIndex::Fullkey && parameters.allow_pro_controller) ||
-+            (style == NpadStyleIndex::JoyconDual && parameters.allow_dual_joycons) ||
-+            (style == NpadStyleIndex::JoyconLeft && parameters.allow_left_joycon) ||
-+            (style == NpadStyleIndex::JoyconRight && parameters.allow_right_joycon) ||
-+            (style == NpadStyleIndex::Handheld && parameters.enable_single_mode && parameters.allow_handheld && !Settings::IsDockedMode()) ||
-+            (style == NpadStyleIndex::GameCube && parameters.allow_gamecube_controller);
-+        num_selected_players += keep_connected[index];
-+    }
-     auto* handheld = hid_core.GetEmulatedController(Core::HID::NpadIdType::Handheld);
--    handheld->Disconnect();
-+    if (!keep_connected[hid_core.available_controllers - 2]) handheld->Disconnect();
- 
-     // Deduce the best configuration based on the input parameters.
-     for (std::size_t index = 0; index < hid_core.available_controllers - 2; ++index) {
-         auto* controller = hid_core.GetEmulatedControllerByIndex(index);
- 
--        // First, disconnect all controllers regardless of the value of keep_controllers_connected.
--        // This makes it easy to connect the desired controllers.
-+        if (keep_connected[index]) continue;
-         controller->Disconnect();
- 
--        // Only connect the minimum number of required players.
--        if (index >= min_supported_players) {
--            continue;
--        }
-+        // only add players still needed to reach the minimum
-+        if (num_selected_players >= min_supported_players) continue;
-+        ++num_selected_players;
- 
-         // Connect controllers based on the following priority list from highest to lowest priority:
-         // Pro Controller -> Dual Joycons -> Left Joycon/Right Joycon -> Handheld
+ #include "zstd.h"
+ #define g_ZSTD_threading_useless_symbol g_ZSTD_zbic_threading_useless_symbol
+ #include "zstd.c"
 diff --git a/src/core/hle/kernel/init/init_slab_setup.cpp b/src/core/hle/kernel/init/init_slab_setup.cpp
-index 5dd8afaf..18adb5d6 100644
+index 5dd8afa..18adb5d 100644
 --- a/src/core/hle/kernel/init/init_slab_setup.cpp
 +++ b/src/core/hle/kernel/init/init_slab_setup.cpp
 @@ -76,7 +76,7 @@ enum KSlabType : u32 {
@@ -8816,7 +8769,7 @@ index 5dd8afaf..18adb5d6 100644
  constexpr size_t SlabCountKPort = 384;
  constexpr size_t SlabCountKSharedMemory = 80;
 diff --git a/src/core/hle/kernel/k_resource_limit.cpp b/src/core/hle/kernel/k_resource_limit.cpp
-index 1a2c92a6..a388871f 100644
+index 1a2c92a..a388871 100644
 --- a/src/core/hle/kernel/k_resource_limit.cpp
 +++ b/src/core/hle/kernel/k_resource_limit.cpp
 @@ -168,7 +168,7 @@ KResourceLimit* CreateResourceLimitForProcess(Core::System& system, s64 physical
@@ -8829,10 +8782,10 @@ index 1a2c92a6..a388871f 100644
          resource_limit->SetLimitValue(LimitableResource::TransferMemoryCountMax, 200).IsSuccess());
      ASSERT(resource_limit->SetLimitValue(LimitableResource::SessionCountMax, 1133).IsSuccess());
 diff --git a/src/core/hle/kernel/kernel.cpp b/src/core/hle/kernel/kernel.cpp
-index d25ac37d..c34d0baf 100644
+index 4f1d849..ad0f7cd 100644
 --- a/src/core/hle/kernel/kernel.cpp
 +++ b/src/core/hle/kernel/kernel.cpp
-@@ -244,7 +244,7 @@ struct KernelCore::Impl {
+@@ -245,7 +245,7 @@ struct KernelCore::Impl {
          // If setting the default system values fails, then something seriously wrong has occurred.
          ASSERT(system_resource_limit->SetLimitValue(LimitableResource::PhysicalMemoryMax, total_size).IsSuccess());
          ASSERT(system_resource_limit->SetLimitValue(LimitableResource::ThreadCountMax, 800).IsSuccess());
@@ -8842,7 +8795,7 @@ index d25ac37d..c34d0baf 100644
          ASSERT(system_resource_limit->SetLimitValue(LimitableResource::SessionCountMax, 1133).IsSuccess());
          system_resource_limit->Reserve(kernel, LimitableResource::PhysicalMemoryMax, kernel_size);
 diff --git a/src/core/hle/kernel/kernel.h b/src/core/hle/kernel/kernel.h
-index 3b754e93..fe1c8b88 100644
+index 2d44654..4702f22 100644
 --- a/src/core/hle/kernel/kernel.h
 +++ b/src/core/hle/kernel/kernel.h
 @@ -32,6 +32,7 @@ struct EventType;
@@ -8853,7 +8806,7 @@ index 3b754e93..fe1c8b88 100644
  class ServerManager;
  }
  
-@@ -303,6 +304,7 @@ public:
+@@ -306,6 +307,7 @@ public:
  private:
      friend class KProcess;
      friend class KThread;
@@ -8862,7 +8815,7 @@ index 3b754e93..fe1c8b88 100644
      /// Creates a new object ID, incrementing the internal object ID counter.
      u32 CreateNewObjectID();
 diff --git a/src/core/hle/service/am/frontend/applet_controller.cpp b/src/core/hle/service/am/frontend/applet_controller.cpp
-index 2c4536e8..3bf0d8e3 100644
+index 2c4536e..3bf0d8e 100644
 --- a/src/core/hle/service/am/frontend/applet_controller.cpp
 +++ b/src/core/hle/service/am/frontend/applet_controller.cpp
 @@ -248,8 +248,12 @@ void Controller::ConfigurationComplete(bool is_success) {
@@ -8879,37 +8832,11 @@ index 2c4536e8..3bf0d8e3 100644
  
      result_info.selected_id = static_cast<u32>(system.HIDCore().GetFirstNpadId());
  
-diff --git a/src/core/hle/service/am/frontend/applets.cpp b/src/core/hle/service/am/frontend/applets.cpp
-index 407ca106..0be4f7f9 100644
---- a/src/core/hle/service/am/frontend/applets.cpp
-+++ b/src/core/hle/service/am/frontend/applets.cpp
-@@ -29,6 +29,7 @@
- #include "core/hle/service/am/frontend/applet_web_browser.h"
- #include "core/hle/service/am/frontend/applets.h"
- #include "core/hle/service/am/service/storage.h"
-+#include "core/hle/service/am/window_system.h"
- #include "core/hle/service/sm/sm.h"
- 
- namespace Service::AM::Frontend {
-@@ -75,7 +76,13 @@ void FrontendApplet::Exit() {
- 
-     std::scoped_lock lk{applet_->lock};
-     applet_->is_completed = true;
-+    if (applet_->process) {
-+        applet_->process->Terminate();
-+    }
-     applet_->state_changed_event.Signal(system.Kernel());
-+    if (auto* ws = system.GetAppletManager().GetWindowSystem()) {
-+        ws->RequestUpdate();
-+    }
- }
- 
- FrontendAppletSet::FrontendAppletSet() = default;
 diff --git a/src/core/hle/service/am/window_system.cpp b/src/core/hle/service/am/window_system.cpp
-index bbaea8ad..6fa91541 100644
+index fbb1a57..5373b2e 100644
 --- a/src/core/hle/service/am/window_system.cpp
 +++ b/src/core/hle/service/am/window_system.cpp
-@@ -235,7 +235,7 @@ void WindowSystem::PruneTerminatedAppletsLocked() {
+@@ -287,7 +287,7 @@ void WindowSystem::PruneTerminatedAppletsLocked() {
  
          std::scoped_lock lk{applet->lock};
  
@@ -8919,7 +8846,7 @@ index bbaea8ad..6fa91541 100644
              it = std::next(it);
              continue;
 diff --git a/src/core/hle/service/os/process.cpp b/src/core/hle/service/os/process.cpp
-index 5e46de24..5a344b72 100644
+index 5e46de2..5a344b7 100644
 --- a/src/core/hle/service/os/process.cpp
 +++ b/src/core/hle/service/os/process.cpp
 @@ -6,6 +6,8 @@
@@ -8968,7 +8895,7 @@ index 5e46de24..5a344b72 100644
  
  u64 Process::GetProgramId() const {
 diff --git a/src/core/hle/service/os/process.h b/src/core/hle/service/os/process.h
-index 103ba7aa..7c50e8f1 100644
+index 103ba7a..7c50e8f 100644
 --- a/src/core/hle/service/os/process.h
 +++ b/src/core/hle/service/os/process.h
 @@ -27,7 +27,7 @@ namespace Service {
@@ -9000,22 +8927,22 @@ index 103ba7aa..7c50e8f1 100644
  };
  
  } // namespace Service
-diff --git a/src/core/hle/service/service.h b/src/core/hle/service/service.h
-index 41429958..9024f009 100644
---- a/src/core/hle/service/service.h
-+++ b/src/core/hle/service/service.h
-@@ -141,7 +141,7 @@ protected:
-         /// @param expected_header_ request header in the command buffer which will trigger dispatch to this handler
-         /// @param handler_callback_ member function in this service which will be called to handle the request
-         /// @param name_ human-friendly name for the request. Used mostly for logging purposes.
--        constexpr FunctionInfoTyped(u32 expected_header_, HandlerFnP<T> handler_callback_, const char* name_)
-+        FunctionInfoTyped(u32 expected_header_, HandlerFnP<T> handler_callback_, const char* name_)
-             : FunctionInfoBase{expected_header_, HandlerFnP<ServiceFrameworkBase>(handler_callback_), name_} {}
-     };
-     using FunctionInfo = FunctionInfoTyped<Self>;
+diff --git a/src/core/launch_params.cpp b/src/core/launch_params.cpp
+index a048322..25fdd45 100644
+--- a/src/core/launch_params.cpp
++++ b/src/core/launch_params.cpp
+@@ -94,7 +94,7 @@ LaunchParams ParseLaunchParams(Core::System& system, int argc, char *argv[], wch
+                 break;
+             case 'u': {
+                 // Launch game with a specific user
+-                bool argument_ok = isdigit(optarg[0]);
++                bool argument_ok = isdigit(optarg[0]) != 0;
+                 p.selected_user = atoi(optarg);
+                 if (!argument_ok) {
+                     // try to look it up by username, only finds the first username that matches.
 diff --git a/src/eden_libretro/CMakeLists.txt b/src/eden_libretro/CMakeLists.txt
 new file mode 100644
-index 00000000..905235d8
+index 0000000..905235d
 --- /dev/null
 +++ b/src/eden_libretro/CMakeLists.txt
 @@ -0,0 +1,58 @@
@@ -9079,7 +9006,7 @@ index 00000000..905235d8
 +create_target_directory_groups(eden_libretro)
 diff --git a/src/eden_libretro/audio/libretro_sink.cpp b/src/eden_libretro/audio/libretro_sink.cpp
 new file mode 100644
-index 00000000..221aeade
+index 0000000..221aead
 --- /dev/null
 +++ b/src/eden_libretro/audio/libretro_sink.cpp
 @@ -0,0 +1,150 @@
@@ -9235,7 +9162,7 @@ index 00000000..221aeade
 +} // namespace Libretro
 diff --git a/src/eden_libretro/audio/libretro_sink.h b/src/eden_libretro/audio/libretro_sink.h
 new file mode 100644
-index 00000000..d8d4bb6e
+index 0000000..d8d4bb6
 --- /dev/null
 +++ b/src/eden_libretro/audio/libretro_sink.h
 @@ -0,0 +1,65 @@
@@ -9306,7 +9233,7 @@ index 00000000..d8d4bb6e
 +} // namespace Libretro
 diff --git a/src/eden_libretro/emu_window/emu_window_libretro.cpp b/src/eden_libretro/emu_window/emu_window_libretro.cpp
 new file mode 100644
-index 00000000..5bf5a47c
+index 0000000..5bf5a47
 --- /dev/null
 +++ b/src/eden_libretro/emu_window/emu_window_libretro.cpp
 @@ -0,0 +1,58 @@
@@ -9370,7 +9297,7 @@ index 00000000..5bf5a47c
 +} // namespace Libretro
 diff --git a/src/eden_libretro/emu_window/emu_window_libretro.h b/src/eden_libretro/emu_window/emu_window_libretro.h
 new file mode 100644
-index 00000000..f0dca884
+index 0000000..f0dca88
 --- /dev/null
 +++ b/src/eden_libretro/emu_window/emu_window_libretro.h
 @@ -0,0 +1,37 @@
@@ -9413,10 +9340,10 @@ index 00000000..f0dca884
 +} // namespace Libretro
 diff --git a/src/eden_libretro/environment.cpp b/src/eden_libretro/environment.cpp
 new file mode 100644
-index 00000000..69bfb054
+index 0000000..ba8e2d4
 --- /dev/null
 +++ b/src/eden_libretro/environment.cpp
-@@ -0,0 +1,913 @@
+@@ -0,0 +1,911 @@
 +// SPDX-FileCopyrightText: Copyright 2026 Eden Emulator Project
 +// SPDX-License-Identifier: GPL-3.0-or-later
 +
@@ -9838,7 +9765,6 @@ index 00000000..69bfb054
 +            {"immediate", "Immediate (Fastest)"},
 +            {"balanced", "Balanced"},
 +            {"accurate", "Accurate"},
-+            {"strict", "Strict"},
 +            {nullptr, nullptr}
 +        },
 +        "default"
@@ -9991,7 +9917,7 @@ index 00000000..69bfb054
 +    {"eden_nvdec", "Video Decoding; gpu|cpu|off"},
 +    {"eden_astc_recompression", "ASTC Recompression; uncompressed|bc1|bc3"},
 +    {"eden_dma_accuracy", "DMA Accuracy; default|unsafe|safe"},
-+    {"eden_gpu_fence", "GPU Fence Behavior; default|immediate|balanced|accurate|strict"},
++    {"eden_gpu_fence", "GPU Fence Behavior; default|immediate|balanced|accurate"},
 +    {"eden_reactive_flushing", "Reactive Flushing; enabled|disabled"},
 +    {"eden_barrier_feedback", "Barrier Feedback Loops; enabled|disabled"},
 +    {"eden_region", "System Region; usa|europe|japan|australia|china|korea|taiwan"},
@@ -10220,7 +10146,6 @@ index 00000000..69bfb054
 +        if (fence_str == "immediate") fence = Settings::GpuFenceBehavior::Immediate;
 +        else if (fence_str == "balanced") fence = Settings::GpuFenceBehavior::Balanced;
 +        else if (fence_str == "accurate") fence = Settings::GpuFenceBehavior::Accurate;
-+        else if (fence_str == "strict") fence = Settings::GpuFenceBehavior::Strict;
 +        Settings::values.gpu_fence_behavior.SetValue(fence);
 +    } else {
 +        Settings::values.gpu_fence_behavior.SetValue(Settings::GpuFenceBehavior::Default);
@@ -10332,7 +10257,7 @@ index 00000000..69bfb054
 +} // namespace Libretro
 diff --git a/src/eden_libretro/environment.h b/src/eden_libretro/environment.h
 new file mode 100644
-index 00000000..1c8720dd
+index 0000000..1c8720d
 --- /dev/null
 +++ b/src/eden_libretro/environment.h
 @@ -0,0 +1,34 @@
@@ -10372,7 +10297,7 @@ index 00000000..1c8720dd
 +} // namespace Libretro
 diff --git a/src/eden_libretro/input/libretro_driver.cpp b/src/eden_libretro/input/libretro_driver.cpp
 new file mode 100644
-index 00000000..53c8c3fa
+index 0000000..53c8c3f
 --- /dev/null
 +++ b/src/eden_libretro/input/libretro_driver.cpp
 @@ -0,0 +1,223 @@
@@ -10601,7 +10526,7 @@ index 00000000..53c8c3fa
 +} // namespace Libretro
 diff --git a/src/eden_libretro/input/libretro_driver.h b/src/eden_libretro/input/libretro_driver.h
 new file mode 100644
-index 00000000..9a089cd4
+index 0000000..9a089cd
 --- /dev/null
 +++ b/src/eden_libretro/input/libretro_driver.h
 @@ -0,0 +1,84 @@
@@ -10691,7 +10616,7 @@ index 00000000..9a089cd4
 +} // namespace Libretro
 diff --git a/src/eden_libretro/libretro.h b/src/eden_libretro/libretro.h
 new file mode 100644
-index 00000000..d83c9e0f
+index 0000000..d83c9e0
 --- /dev/null
 +++ b/src/eden_libretro/libretro.h
 @@ -0,0 +1,399 @@
@@ -11096,13 +11021,14 @@ index 00000000..d83c9e0f
 +#endif
 diff --git a/src/eden_libretro/libretro_core.cpp b/src/eden_libretro/libretro_core.cpp
 new file mode 100644
-index 00000000..9052a532
+index 0000000..c4549d0
 --- /dev/null
 +++ b/src/eden_libretro/libretro_core.cpp
-@@ -0,0 +1,1269 @@
+@@ -0,0 +1,1281 @@
 +// SPDX-FileCopyrightText: Copyright 2026 Eden Emulator Project
 +// SPDX-License-Identifier: GPL-3.0-or-later
 +
++#include "core/loader/loader.h"
 +#include "eden_libretro/libretro_core.h"
 +
 +#include <algorithm>
@@ -11601,6 +11527,17 @@ index 00000000..9052a532
 +    // Libretro frontends serialize lifecycle calls. Unload before taking the
 +    // per-frame mutex: UnloadGame() takes the same lock and the old ordering
 +    // deadlocked when a frontend reused the core for a second title.
++    // Reject unsupported content before allocating the emulation/GPU system.
++    // Invalid NSP/XCI data must be a normal load error, including in headless hosts.
++    auto preflight_vfs = std::make_shared<FileSys::RealVfsFilesystem>();
++    const auto preflight_file = preflight_vfs->OpenFile(filepath, FileSys::OpenMode::Read);
++    const auto preflight_type = preflight_file ? Loader::IdentifyFile(preflight_file)
++                                              : Loader::FileType::Error;
++    if (preflight_type == Loader::FileType::Error || preflight_type == Loader::FileType::Unknown) {
++        LOG_ERROR(Frontend, "Unsupported or invalid content: {}", filepath);
++        return false;
++    }
++
 +    if (is_game_loaded) {
 +        UnloadGame();
 +    }
@@ -12371,7 +12308,7 @@ index 00000000..9052a532
 +} // extern "C"
 diff --git a/src/eden_libretro/libretro_core.h b/src/eden_libretro/libretro_core.h
 new file mode 100644
-index 00000000..97114288
+index 0000000..9711428
 --- /dev/null
 +++ b/src/eden_libretro/libretro_core.h
 @@ -0,0 +1,99 @@
@@ -12476,7 +12413,7 @@ index 00000000..97114288
 +} // namespace Libretro
 diff --git a/src/eden_libretro/logging/libretro_log.cpp b/src/eden_libretro/logging/libretro_log.cpp
 new file mode 100644
-index 00000000..e3c48b27
+index 0000000..e3c48b2
 --- /dev/null
 +++ b/src/eden_libretro/logging/libretro_log.cpp
 @@ -0,0 +1,35 @@
@@ -12517,7 +12454,7 @@ index 00000000..e3c48b27
 +} // namespace Libretro
 diff --git a/src/eden_libretro/logging/libretro_log.h b/src/eden_libretro/logging/libretro_log.h
 new file mode 100644
-index 00000000..9468b1a2
+index 0000000..9468b1a
 --- /dev/null
 +++ b/src/eden_libretro/logging/libretro_log.h
 @@ -0,0 +1,19 @@
@@ -12542,7 +12479,7 @@ index 00000000..9468b1a2
 +} // namespace Libretro
 diff --git a/src/eden_libretro/video/graphics_context_libretro.cpp b/src/eden_libretro/video/graphics_context_libretro.cpp
 new file mode 100644
-index 00000000..fc9e68ad
+index 0000000..fc9e68a
 --- /dev/null
 +++ b/src/eden_libretro/video/graphics_context_libretro.cpp
 @@ -0,0 +1,174 @@
@@ -12722,7 +12659,7 @@ index 00000000..fc9e68ad
 +} // namespace Libretro
 diff --git a/src/eden_libretro/video/graphics_context_libretro.h b/src/eden_libretro/video/graphics_context_libretro.h
 new file mode 100644
-index 00000000..2142c915
+index 0000000..2142c91
 --- /dev/null
 +++ b/src/eden_libretro/video/graphics_context_libretro.h
 @@ -0,0 +1,32 @@
@@ -12760,7 +12697,7 @@ index 00000000..2142c915
 +} // namespace Libretro
 diff --git a/src/eden_libretro/video/opengl_bridge.cpp b/src/eden_libretro/video/opengl_bridge.cpp
 new file mode 100644
-index 00000000..cddf7c31
+index 0000000..cddf7c3
 --- /dev/null
 +++ b/src/eden_libretro/video/opengl_bridge.cpp
 @@ -0,0 +1,93 @@
@@ -12859,7 +12796,7 @@ index 00000000..cddf7c31
 +} // namespace Libretro
 diff --git a/src/eden_libretro/video/opengl_bridge.h b/src/eden_libretro/video/opengl_bridge.h
 new file mode 100644
-index 00000000..637776b8
+index 0000000..637776b
 --- /dev/null
 +++ b/src/eden_libretro/video/opengl_bridge.h
 @@ -0,0 +1,37 @@
@@ -12902,7 +12839,7 @@ index 00000000..637776b8
 +} // namespace Libretro
 diff --git a/src/eden_libretro/video/vma.cpp b/src/eden_libretro/video/vma.cpp
 new file mode 100644
-index 00000000..7e2ea49c
+index 0000000..7e2ea49
 --- /dev/null
 +++ b/src/eden_libretro/video/vma.cpp
 @@ -0,0 +1,5 @@
@@ -12913,7 +12850,7 @@ index 00000000..7e2ea49c
 +#include "video_core/vulkan_common/vma.h"
 diff --git a/src/eden_libretro/video/vulkan_bridge.cpp b/src/eden_libretro/video/vulkan_bridge.cpp
 new file mode 100644
-index 00000000..6646c0d8
+index 0000000..6646c0d
 --- /dev/null
 +++ b/src/eden_libretro/video/vulkan_bridge.cpp
 @@ -0,0 +1,106 @@
@@ -13025,7 +12962,7 @@ index 00000000..6646c0d8
 +} // namespace Libretro
 diff --git a/src/eden_libretro/video/vulkan_bridge.h b/src/eden_libretro/video/vulkan_bridge.h
 new file mode 100644
-index 00000000..7f512f7a
+index 0000000..7f512f7
 --- /dev/null
 +++ b/src/eden_libretro/video/vulkan_bridge.h
 @@ -0,0 +1,40 @@
@@ -13070,7 +13007,7 @@ index 00000000..7f512f7a
 +
 +} // namespace Libretro
 diff --git a/src/frontend_common/content_manager.h b/src/frontend_common/content_manager.h
-index 4f3112e3..d1c2e882 100644
+index 4f3112e..d1c2e88 100644
 --- a/src/frontend_common/content_manager.h
 +++ b/src/frontend_common/content_manager.h
 @@ -36,6 +36,41 @@ enum class GameVerificationResult {
@@ -13116,7 +13053,7 @@ index 4f3112e3..d1c2e882 100644
   * \brief Removes a single installed DLC
   * \param fs_controller [FileSystemController] reference from the Core::System instance
 diff --git a/src/hid_core/frontend/emulated_console.cpp b/src/hid_core/frontend/emulated_console.cpp
-index 92e99a1f..8b90d018 100644
+index fd34233..9fe6a47 100644
 --- a/src/hid_core/frontend/emulated_console.cpp
 +++ b/src/hid_core/frontend/emulated_console.cpp
 @@ -25,6 +25,11 @@ void EmulatedConsole::ReloadFromSettings() {
@@ -13132,13 +13069,13 @@ index 92e99a1f..8b90d018 100644
      if (!Settings::values.mouse_enabled) {
          touch_params[index++] =
 diff --git a/src/video_core/renderer_base.cpp b/src/video_core/renderer_base.cpp
-index 9b6fb69a..25d97bb7 100644
+index e19a70e..bc0d52d 100644
 --- a/src/video_core/renderer_base.cpp
 +++ b/src/video_core/renderer_base.cpp
-@@ -37,18 +37,22 @@ bool RendererBase::IsScreenshotPending() const {
- 
+@@ -38,19 +38,23 @@ bool RendererBase::IsScreenshotPending() const {
  void RendererBase::RequestScreenshot(void* data, std::function<void(bool)> callback,
-                                      const Layout::FramebufferLayout& layout) {
+                                      const Layout::FramebufferLayout& layout,
+                                      Service::Nvnflinger::LayerStackId layer_stack) {
 +    std::scoped_lock lock{screenshot_mutex};
      if (renderer_settings.screenshot_requested) {
          LOG_ERROR(Render, "A screenshot is already requested or in progress, ignoring the request");
@@ -13152,6 +13089,7 @@ index 9b6fb69a..25d97bb7 100644
 -    renderer_settings.screenshot_complete_callback = async_callback;
 +    renderer_settings.screenshot_complete_callback = std::move(callback);
      renderer_settings.screenshot_framebuffer_layout = layout;
+     renderer_settings.screenshot_layer_stack = layer_stack;
      renderer_settings.screenshot_requested = true;
  }
  
@@ -13164,10 +13102,10 @@ index 9b6fb69a..25d97bb7 100644
 +
  } // namespace VideoCore
 diff --git a/src/video_core/renderer_base.h b/src/video_core/renderer_base.h
-index 67427f93..5d572513 100644
+index 46f8276..10ce615 100644
 --- a/src/video_core/renderer_base.h
 +++ b/src/video_core/renderer_base.h
-@@ -6,6 +6,7 @@
+@@ -9,6 +9,7 @@
  #include <atomic>
  #include <functional>
  #include <memory>
@@ -13175,9 +13113,9 @@ index 67427f93..5d572513 100644
  
  #include "common/common_funcs.h"
  #include "common/common_types.h"
-@@ -92,6 +93,12 @@ public:
-     void RequestScreenshot(void* data, std::function<void(bool)> callback,
-                            const Layout::FramebufferLayout& layout);
+@@ -98,6 +99,12 @@ public:
+                            Service::Nvnflinger::LayerStackId layer_stack =
+                                Service::Nvnflinger::LayerStackId::Default);
  
 +    /// Cancel a queued screenshot and wait for an in-progress capture to finish.
 +    void CancelScreenshot();
@@ -13188,7 +13126,7 @@ index 67427f93..5d572513 100644
  protected:
      Core::Frontend::EmuWindow& render_window; ///< Reference to the render window handle.
      std::unique_ptr<Core::Frontend::GraphicsContext> context;
-@@ -99,6 +106,7 @@ protected:
+@@ -105,6 +112,7 @@ protected:
      int m_current_frame = 0;  ///< Current frame, should be set by the renderer
  
      RendererSettings renderer_settings;
@@ -13197,7 +13135,7 @@ index 67427f93..5d572513 100644
  private:
      /// Updates the framebuffer layout of the contained render window handle.
 diff --git a/src/video_core/renderer_opengl/present/window_adapt_pass.cpp b/src/video_core/renderer_opengl/present/window_adapt_pass.cpp
-index 5f3461a9..649bc57f 100644
+index 5f3461a..649bc57 100644
 --- a/src/video_core/renderer_opengl/present/window_adapt_pass.cpp
 +++ b/src/video_core/renderer_opengl/present/window_adapt_pass.cpp
 @@ -25,7 +25,8 @@ WindowAdaptPass::WindowAdaptPass(const Device& device_, OGLSampler&& sampler_,
@@ -13233,7 +13171,7 @@ index 5f3461a9..649bc57f 100644
  
      glDisable(GL_FRAMEBUFFER_SRGB);
 diff --git a/src/video_core/renderer_opengl/present/window_adapt_pass.h b/src/video_core/renderer_opengl/present/window_adapt_pass.h
-index 0a8bcef2..3831c06e 100644
+index 0a8bcef..3831c06 100644
 --- a/src/video_core/renderer_opengl/present/window_adapt_pass.h
 +++ b/src/video_core/renderer_opengl/present/window_adapt_pass.h
 @@ -39,6 +39,7 @@ private:
@@ -13245,7 +13183,7 @@ index 0a8bcef2..3831c06e 100644
      // GPU address of the vertex buffer
      GLuint64EXT vertex_buffer_address = 0;
 diff --git a/src/video_core/renderer_opengl/renderer_opengl.cpp b/src/video_core/renderer_opengl/renderer_opengl.cpp
-index 1c721471..3a0365a7 100644
+index f9ec32e..a422ce8 100644
 --- a/src/video_core/renderer_opengl/renderer_opengl.cpp
 +++ b/src/video_core/renderer_opengl/renderer_opengl.cpp
 @@ -166,35 +166,46 @@ void RendererOpenGL::AddTelemetryFields() {
@@ -13310,10 +13248,10 @@ index 1c721471..3a0365a7 100644
          return;
      }
 diff --git a/src/video_core/renderer_opengl/renderer_opengl.h b/src/video_core/renderer_opengl/renderer_opengl.h
-index f694dc41..abaebee1 100644
+index 5a6757e..5c74ea6 100644
 --- a/src/video_core/renderer_opengl/renderer_opengl.h
 +++ b/src/video_core/renderer_opengl/renderer_opengl.h
-@@ -70,6 +70,9 @@ private:
+@@ -73,6 +73,9 @@ private:
      ProgramManager program_manager;
      RasterizerOpenGL rasterizer;
      OGLFramebuffer screenshot_framebuffer;
@@ -13324,10 +13262,10 @@ index f694dc41..abaebee1 100644
      OGLRenderbuffer capture_renderbuffer;
  
 diff --git a/src/video_core/renderer_vulkan/renderer_vulkan.cpp b/src/video_core/renderer_vulkan/renderer_vulkan.cpp
-index d815278c..fa62445e 100644
+index 27ca531..d61a504 100644
 --- a/src/video_core/renderer_vulkan/renderer_vulkan.cpp
 +++ b/src/video_core/renderer_vulkan/renderer_vulkan.cpp
-@@ -191,21 +191,49 @@ try
+@@ -198,21 +198,49 @@ try
  
  RendererVulkan::~RendererVulkan() {
      scheduler.RegisterOnSubmit([] {});
@@ -13379,7 +13317,7 @@ index d815278c..fa62445e 100644
      Frame* frame = present_manager.GetRenderFrame();
  
      scheduler.RequestOutsideRenderPassOperationContext();
-@@ -258,46 +286,85 @@ void RendererVulkan::Report() const {
+@@ -267,49 +295,94 @@ void RendererVulkan::Report() const {
      LOG_INFO(Render_Vulkan, "Available VRAM: {:.2f} GiB", available_vram);
  }
  
@@ -13459,17 +13397,26 @@ index d815278c..fa62445e 100644
      }
 +    LOG_DEBUG(Render_Vulkan, "RenderScreenshot: capturing frame with {} layers to buffer", framebuffers.size());
  
+     const auto screenshot_layers = Tegra::FilterLayerStack(
+         framebuffers, renderer_settings.screenshot_layer_stack, screenshot_layer_scratch);
+ 
      const auto& layout{renderer_settings.screenshot_framebuffer_layout};
--    const auto dst_buffer = RenderToBuffer(framebuffers, layout, VK_FORMAT_B8G8R8A8_UNORM,
+-    const auto dst_buffer = RenderToBuffer(screenshot_layers, layout, VK_FORMAT_B8G8R8A8_UNORM,
 -                                           layout.width * layout.height * 4);
-+    RenderToBuffer(framebuffers, layout, VK_FORMAT_B8G8R8A8_UNORM,
-+                   layout.width * layout.height * 4);
-+    screenshot_readback_tick = scheduler.Flush();
-+    screenshot_readback_pending = true;
-+}
++    auto& dst_buffer = RenderToBuffer(screenshot_layers, layout, VK_FORMAT_B8G8R8A8_UNORM,
++                                     layout.width * layout.height * 4);
  
 -    std::memcpy(renderer_settings.screenshot_bits, dst_buffer.Mapped().data(),
 -                dst_buffer.Mapped().size());
++    scheduler.RequestOutsideRenderPassOperationContext();
++    scheduler.Record([&](vk::CommandBuffer cmdbuf) {
++        DownloadColorImage(cmdbuf, *screenshot_frame.image, *dst_buffer,
++                           VkExtent3D{layout.width, layout.height, 1});
++    });
++    screenshot_readback_tick = scheduler.CurrentTick();
++    screenshot_readback_pending = true;
++}
++
 +void RendererVulkan::TryRetireScreenshot() {
 +    std::scoped_lock lock{screenshot_mutex};
 +    if (!screenshot_readback_pending) {
@@ -13488,18 +13435,19 @@ index d815278c..fa62445e 100644
      renderer_settings.screenshot_complete_callback(false);
      renderer_settings.screenshot_requested = false;
  }
-@@ -332,6 +399,9 @@ std::vector<u8> RendererVulkan::GetAppletCaptureBuffer() {
+@@ -358,8 +431,8 @@ void RendererVulkan::RenderAppletCaptureLayer(
+     }
  
- void RendererVulkan::RenderAppletCaptureLayer(
-     std::span<const Tegra::FramebufferConfig> framebuffers) {
-+    if (!*surface) {
-+        return;
-+    }
-     if (!applet_frame.image) {
-         applet_frame.image = CreateWrappedImage(memory_allocator, CaptureImageSize, CaptureFormat);
-         applet_frame.image_view = CreateWrappedImageView(device, applet_frame.image, CaptureFormat);
+     scheduler.RequestOutsideRenderPassOperationContext();
+-    blit_applet.DrawToFrame(device, rasterizer, &applet_frame, capture_layers, VideoCore::Capture::Layout, 1,
+-                            CaptureFormat);
++    blit_applet.DrawToFrame(device, rasterizer, &applet_frame, capture_layers,
++                            VideoCore::Capture::Layout, 1, CaptureFormat);
+ }
+ 
+ } // namespace Vulkan
 diff --git a/src/video_core/renderer_vulkan/renderer_vulkan.h b/src/video_core/renderer_vulkan/renderer_vulkan.h
-index 5125fadc..5c774508 100644
+index 87422dd..d195658 100644
 --- a/src/video_core/renderer_vulkan/renderer_vulkan.h
 +++ b/src/video_core/renderer_vulkan/renderer_vulkan.h
 @@ -51,6 +51,8 @@ public:
@@ -13524,7 +13472,7 @@ index 5125fadc..5c774508 100644
      void RenderScreenshot(std::span<const Tegra::FramebufferConfig> framebuffers);
      void RenderAppletCaptureLayer(std::span<const Tegra::FramebufferConfig> framebuffers);
  
-@@ -104,6 +106,10 @@ private:
+@@ -107,6 +109,10 @@ private:
      std::optional<TurboMode> turbo_mode;
  
      Frame applet_frame;
@@ -13536,10 +13484,10 @@ index 5125fadc..5c774508 100644
  
  } // namespace Vulkan
 diff --git a/src/video_core/renderer_vulkan/vk_pipeline_cache.cpp b/src/video_core/renderer_vulkan/vk_pipeline_cache.cpp
-index 785602b3..8098a72c 100644
+index a85e281..092edff 100644
 --- a/src/video_core/renderer_vulkan/vk_pipeline_cache.cpp
 +++ b/src/video_core/renderer_vulkan/vk_pipeline_cache.cpp
-@@ -1050,7 +1050,7 @@ vk::PipelineCache PipelineCache::LoadVulkanPipelineCache(const std::filesystem::
+@@ -1115,7 +1115,7 @@ vk::PipelineCache PipelineCache::LoadVulkanPipelineCache(const std::filesystem::
          file.read(cache_data.data(), cache_size);
  
          LOG_INFO(Render_Vulkan,
@@ -13549,10 +13497,10 @@ index 785602b3..8098a72c 100644
          return create_pipeline_cache(cache_size, cache_data.data());
  
 diff --git a/src/video_core/renderer_vulkan/vk_present_manager.cpp b/src/video_core/renderer_vulkan/vk_present_manager.cpp
-index 523e6d02..5109462b 100644
+index 9298764..1bc86f5 100644
 --- a/src/video_core/renderer_vulkan/vk_present_manager.cpp
 +++ b/src/video_core/renderer_vulkan/vk_present_manager.cpp
-@@ -358,14 +358,15 @@ void PresentManager::SetImageCount() {
+@@ -364,14 +364,15 @@ void PresentManager::SetImageCount() {
      // We cannot have more than 7 images in flight at any given time.
      // FRAMES_IN_FLIGHT is 8, and the cache TICKS_TO_DESTROY is 8.
      // Mali drivers will give us 6.
@@ -13568,9 +13516,9 @@ index 523e6d02..5109462b 100644
 -    image_count = std::min<size_t>(swapchain.GetImageCount(), MAX_FRAMES_IN_FLIGHT);
 +    image_count = std::min<size_t>(swap_count, MAX_FRAMES_IN_FLIGHT);
  #endif
- }
- 
-@@ -395,6 +396,10 @@ void PresentManager::CopyToSwapchain(Frame* frame) {
+     swapchain_image_count = swapchain.GetImageCount();
+     swapchain_image_format = swapchain.GetImageFormat();
+@@ -424,6 +425,10 @@ void PresentManager::CopyToSwapchain(Frame* frame) {
  }
  
  void PresentManager::CopyToSwapchainImpl(Frame* frame) {
@@ -13582,7 +13530,7 @@ index 523e6d02..5109462b 100644
      // If the size of the incoming frames has changed, recreate the swapchain
      // to account for that.
 diff --git a/src/video_core/renderer_vulkan/vk_rasterizer.cpp b/src/video_core/renderer_vulkan/vk_rasterizer.cpp
-index a10d2e01..54a975c1 100644
+index f43bea1..8ce0f72 100644
 --- a/src/video_core/renderer_vulkan/vk_rasterizer.cpp
 +++ b/src/video_core/renderer_vulkan/vk_rasterizer.cpp
 @@ -228,8 +228,10 @@ RasterizerVulkan::RasterizerVulkan(Core::Frontend::EmuWindow& emu_window_, Tegra
@@ -13598,7 +13546,7 @@ index a10d2e01..54a975c1 100644
  
  template <typename Func>
 diff --git a/src/video_core/renderer_vulkan/vk_scheduler.cpp b/src/video_core/renderer_vulkan/vk_scheduler.cpp
-index 3601a3e8..c545e9b7 100644
+index 4a7a7d5..598a16a 100644
 --- a/src/video_core/renderer_vulkan/vk_scheduler.cpp
 +++ b/src/video_core/renderer_vulkan/vk_scheduler.cpp
 @@ -55,6 +55,9 @@ Scheduler::Scheduler(const Device& device_, StateTracker& state_tracker_)
@@ -13622,7 +13570,7 @@ index 3601a3e8..c545e9b7 100644
      const u64 presubmit_tick = CurrentTick();
      SubmitExecution(signal_semaphore, wait_semaphore);
 diff --git a/src/video_core/renderer_vulkan/vk_scheduler.h b/src/video_core/renderer_vulkan/vk_scheduler.h
-index c2aa3fb9..f0aa1db7 100644
+index d4bc8d0..17f839c 100644
 --- a/src/video_core/renderer_vulkan/vk_scheduler.h
 +++ b/src/video_core/renderer_vulkan/vk_scheduler.h
 @@ -43,6 +43,12 @@ public:
@@ -13638,7 +13586,7 @@ index c2aa3fb9..f0aa1db7 100644
      /// Sends the current execution context to the GPU.
      u64 Flush(VkSemaphore signal_semaphore = {}, VkSemaphore wait_semaphore = {});
  
-@@ -128,6 +134,9 @@ public:
+@@ -131,6 +137,9 @@ public:
  
      /// Waits for the given GPU tick, optionally pacing frames.
      void Wait(u64 tick, double target_fps = 0.0) {
@@ -13648,7 +13596,7 @@ index c2aa3fb9..f0aa1db7 100644
          if (tick > 0) {
              if (tick >= master_semaphore->CurrentTick()) {
                  Flush();
-@@ -327,6 +336,7 @@ private:
+@@ -330,6 +339,7 @@ private:
      double last_target_fps{};
      u64 max_frame_count{};
      u64 frame_counter{};
@@ -13657,7 +13605,7 @@ index c2aa3fb9..f0aa1db7 100644
  
  } // namespace Vulkan
 diff --git a/src/video_core/renderer_vulkan/vk_swapchain.cpp b/src/video_core/renderer_vulkan/vk_swapchain.cpp
-index fea53985..d6d88449 100644
+index fea5398..d6d8844 100644
 --- a/src/video_core/renderer_vulkan/vk_swapchain.cpp
 +++ b/src/video_core/renderer_vulkan/vk_swapchain.cpp
 @@ -130,8 +130,6 @@ Swapchain::Swapchain(
@@ -13704,7 +13652,7 @@ index fea53985..d6d88449 100644
      const VkPresentInfoKHR present_info{
          .sType = VK_STRUCTURE_TYPE_PRESENT_INFO_KHR,
 diff --git a/src/video_core/shader_notify.cpp b/src/video_core/shader_notify.cpp
-index 631891ec..765c207d 100644
+index 631891e..765c207 100644
 --- a/src/video_core/shader_notify.cpp
 +++ b/src/video_core/shader_notify.cpp
 @@ -10,6 +10,11 @@ using namespace std::chrono_literals;
@@ -13720,7 +13668,7 @@ index 631891ec..765c207d 100644
  
  int ShaderNotify::ShadersBuilding() noexcept {
 diff --git a/src/video_core/shader_notify.h b/src/video_core/shader_notify.h
-index 696a5138..dd1ebf0a 100644
+index 696a513..dd1ebf0 100644
 --- a/src/video_core/shader_notify.h
 +++ b/src/video_core/shader_notify.h
 @@ -3,29 +3,69 @@
@@ -13794,7 +13742,7 @@ index 696a5138..dd1ebf0a 100644
  };
  } // namespace VideoCore
 diff --git a/src/video_core/vulkan_common/vulkan_surface.cpp b/src/video_core/vulkan_common/vulkan_surface.cpp
-index 8b9dcb4d..e1456317 100644
+index 8b9dcb4..e145631 100644
 --- a/src/video_core/vulkan_common/vulkan_surface.cpp
 +++ b/src/video_core/vulkan_common/vulkan_surface.cpp
 @@ -106,6 +106,10 @@ vk::SurfaceKHR CreateSurface(
