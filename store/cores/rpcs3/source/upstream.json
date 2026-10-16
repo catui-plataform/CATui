@@ -1,0 +1,155 @@
+{
+  "repository": "https://github.com/RPCS3/rpcs3.git",
+  "commit": "5b350ff3e172f57a595f71f8bda3f9bacf7a2ce2",
+  "integrationDirectory": "rpcs3/catui",
+  "changedFiles": [
+    "rpcs3/CMakeLists.txt",
+    "rpcs3/Emu/Audio/AudioBackend.cpp",
+    "rpcs3/Emu/Cell/Modules/cellPad.cpp",
+    "rpcs3/Emu/RSX/GL/GLPresent.cpp",
+    "rpcs3/Emu/RSX/VK/VKPresent.cpp",
+    "rpcs3/Input/pad_thread.cpp",
+    "rpcs3/catui/CMakeLists.txt",
+    "rpcs3/catui/libretro.h",
+    "rpcs3/catui/llvm_msvc_compat.cpp",
+    "rpcs3/catui/proxy.cpp",
+    "rpcs3/catui/transport.h",
+    "rpcs3/rpcs3.cpp",
+    "rpcs3/rpcs3qt/gs_frame.cpp",
+    "rpcs3/rpcs3qt/gui_application.cpp",
+    "rpcs3/rpcs3qt/qt_utils.cpp"
+  ],
+  "licenseFile": "LICENSE",
+  "snapshot": {
+    "archive": "source.tar.gz",
+    "sha256": "d9e03e1e14df9f617f1c1a2b2df9b6ee5b7751142688867327fb6855d4b71ac4",
+    "size": 7295806,
+    "tree": "61c4a0c6c53247e2f35f4d5df765b2ed127a89fe",
+    "localCommit": "5b350ff3e172f57a595f71f8bda3f9bacf7a2ce2",
+    "excludedPaths": [
+      ".ci/build-freebsd.sh",
+      ".ci/build-linux-aarch64.sh",
+      ".ci/build-linux.sh",
+      ".ci/build-mac.sh",
+      ".ci/build-windows-clang.sh"
+    ],
+    "submodules": [
+      {
+        "path": "3rdparty/7zip/7zip",
+        "commit": "0766b733fe3e06dd2a7f9a3cfbf2108ac73abd17"
+      },
+      {
+        "path": "3rdparty/FAudio",
+        "commit": "667942a9097991f5cb6d1532a7ac3142e0581102"
+      },
+      {
+        "path": "3rdparty/GPUOpen/VulkanMemoryAllocator",
+        "commit": "1d8f600fd424278486eade7ed3e877c99f0846b1"
+      },
+      {
+        "path": "3rdparty/OpenAL/openal-soft",
+        "commit": "b2c48f7718ef3fcf67921a8b6534c4914e328970"
+      },
+      {
+        "path": "3rdparty/SoundTouch/soundtouch",
+        "commit": "a0fba77b6f9cfbdb71f8bbec58b6ac4e5e3b1097"
+      },
+      {
+        "path": "3rdparty/asmjit/asmjit",
+        "commit": "416f7356967c1f66784dc1580fe157f9406d8bff"
+      },
+      {
+        "path": "3rdparty/cubeb/cubeb",
+        "commit": "484857522c73318c06f18ba0a3e17525fa98c608"
+      },
+      {
+        "path": "3rdparty/curl/curl",
+        "commit": "01346829096c61b372692f6dc43ffa778c6caccd"
+      },
+      {
+        "path": "3rdparty/discord-rpc/discord-rpc",
+        "commit": "fb04b1766bbbe7d2f47985b8b82fded0366efdf9"
+      },
+      {
+        "path": "3rdparty/feralinteractive/feralinteractive",
+        "commit": "c54d6d4243b0dd0afcb49f2c9836d432da171a2b"
+      },
+      {
+        "path": "3rdparty/ffmpeg",
+        "commit": "649d9d9353184a17ae78d9df4a6fbbe7456f0428"
+      },
+      {
+        "path": "3rdparty/fusion/fusion",
+        "commit": "9325424011892abacc0ce42b8bb1a8ae20264b9b"
+      },
+      {
+        "path": "3rdparty/glslang/glslang",
+        "commit": "f0bd0257c308b9a26562c1a30c4748a0219cc951"
+      },
+      {
+        "path": "3rdparty/hidapi/hidapi",
+        "commit": "d6b2a974608dec3b76fb1e36c189f22b9cf3650c"
+      },
+      {
+        "path": "3rdparty/libpng/libpng",
+        "commit": "cd952f49f95bb27154ae77dbb103032d95f6e580"
+      },
+      {
+        "path": "3rdparty/libsdl-org/SDL",
+        "commit": "fa2c02bb6e21974a89ea9824bc53c9932abe5f9c"
+      },
+      {
+        "path": "3rdparty/libusb/libusb",
+        "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f"
+      },
+      {
+        "path": "3rdparty/llvm/llvm",
+        "commit": "ca7933e47d3a3451d81e72ac174dcb5aa28b59d1"
+      },
+      {
+        "path": "3rdparty/miniupnp/miniupnp",
+        "commit": "d66872e34d9ff83a07f8b71371b13419b2089953"
+      },
+      {
+        "path": "3rdparty/opencv/opencv",
+        "commit": "d4dde8afe3098f33f253278e25d45d6554afb10c"
+      },
+      {
+        "path": "3rdparty/protobuf/protobuf",
+        "commit": "edaa823d8b36a8656d7b2b9241b7d0bfe50af878"
+      },
+      {
+        "path": "3rdparty/pugixml",
+        "commit": "c8033ce9d039e7f9d134877c363397b3cfe20816"
+      },
+      {
+        "path": "3rdparty/rtmidi/rtmidi",
+        "commit": "1e5b49925aa60065db52de44c366d446a902547b"
+      },
+      {
+        "path": "3rdparty/stblib/stb",
+        "commit": "013ac3beddff3dbffafd5177e7972067cd2b5083"
+      },
+      {
+        "path": "3rdparty/wolfssl/wolfssl",
+        "commit": "3c5eead44904df64e6a5a1f4ebdce377d35a849a"
+      },
+      {
+        "path": "3rdparty/yaml-cpp/yaml-cpp",
+        "commit": "51a5d623e3fde1f58829a56ba910f1cb33596222"
+      },
+      {
+        "path": "3rdparty/zlib/zlib",
+        "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
+      },
+      {
+        "path": "3rdparty/zstd/zstd",
+        "commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+      }
+    ]
+  },
+  "package": {
+    "filename": "rpcs3_catui.zip",
+    "sha256": "19394cd05ddb08afa4a8b699211d2bcad7cf869bda4c65dd18c30bf1cc3e8047"
+  }
+}

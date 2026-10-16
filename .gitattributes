@@ -5,3 +5,6 @@
 *.json text eol=lf
 *.mjs text eol=lf
 *.md text eol=lf
+*.patch whitespace=-trailing-space,-space-before-tab
+# Source snapshots retain the original emulator's formatting.
+store/cores/*/source/integration/** whitespace=-trailing-space,-space-before-tab

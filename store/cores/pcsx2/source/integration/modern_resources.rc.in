@@ -1,0 +1,3 @@
+#include "libretro/modern_resources_ids.h"
+
+IDR_PCSX2_RESOURCES RCDATA "@LRPS2_RESOURCE_ARCHIVE@"

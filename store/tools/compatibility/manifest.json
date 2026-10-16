@@ -1,0 +1,7 @@
+{
+  "filename": "catui_core.dll",
+  "sha256": "1930ddbdc93f8dd55325c83c31ce4b1f6a12a9621fbcd2365b86096c69cf71e2",
+  "size": 1959424,
+  "sourceRevision": "483b1a836efd0d48d57852fa82a0b6eab5dbb568",
+  "purpose": "Pinned CATui LibretroSession frontend for headless core compatibility checks; no gameplay benchmark."
+}

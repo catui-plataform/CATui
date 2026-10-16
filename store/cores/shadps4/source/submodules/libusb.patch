@@ -1,0 +1,21 @@
+diff --git a/libusb/libusb.h b/libusb/libusb.h
+index 3db35fa9..4bab66d0 100644
+--- a/libusb/libusb.h
++++ b/libusb/libusb.h
+@@ -115,8 +115,15 @@ typedef SSIZE_T ssize_t;
+  * return type, before the function name. See internal documentation for
+  * API_EXPORTED.
+  */
+- // Apply __attribute__((sysv_abi)) for PS4 compatibility.
++#if defined(_MSC_VER)
++/* Keep the Windows ABI when the host build uses MSVC. */
++#define LIBUSB_CALL WINAPI
++#elif defined(__GNUC__)
++/* Apply the SysV ABI only to the PS4-compatible GCC build. */
+ #define LIBUSB_CALL __attribute__((sysv_abi))
++#else
++#define LIBUSB_CALL
++#endif
+ #define LIBUSB_CALLV LIBUSB_CALL
+ 
+ /** \def LIBUSB_API_VERSION

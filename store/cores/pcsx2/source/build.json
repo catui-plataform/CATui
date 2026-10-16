@@ -1,0 +1,22 @@
+{
+  "cmake": [
+    "-DLIBRETRO=ON",
+    "-DENABLE_QT_UI=OFF",
+    "-DENABLE_TESTS=OFF",
+    "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
+  ],
+  "targets": [
+    "pcsx2_libretro"
+  ],
+  "outputs": [
+    {
+      "name": "pcsx2_libretro.dll",
+      "destination": "pcsx2_libretro.dll"
+    }
+  ],
+  "requirements": [
+    "MSVC x64",
+    "Ninja",
+    "PCSX2 static dependencies via CMAKE_PREFIX_PATH"
+  ]
+}

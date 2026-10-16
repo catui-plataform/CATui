@@ -1,7 +1,7 @@
 {
   "ok": true,
   "schemaVersion": 1,
-  "contentRef": "store-2026-10-15",
+  "contentRef": "main",
   "items": [
     {
       "id": "cemu",
@@ -29,14 +29,14 @@
       "size": "26.5 MB",
       "sizeBytes": 27782393,
       "sha256": "4c719266e121a951f32f481506cbce4f4fa4bca4b97b6a261d840387ad249644",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/cemu/cemu_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/cemu/cemu_libretro.dll",
       "packageType": "dll",
       "entryFilename": "cemu_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/cemu/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/cemu/icon.png",
       "verified": true
     },
     {
@@ -63,14 +63,14 @@
       "size": "25.8 MB",
       "sizeBytes": 27064749,
       "sha256": "368ea84c9e3892f66b2d14470f4389a984ec3febe6c0d5749f0b2934bf4c4671",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/citra/citra_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/citra/citra_libretro.dll",
       "packageType": "dll",
       "entryFilename": "citra_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/citra/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/citra/icon.png",
       "verified": true
     },
     {
@@ -105,14 +105,14 @@
       "size": "18.0 MB",
       "sizeBytes": 18893244,
       "sha256": "39aa69a0d2c9610faf135054974a756d3b1c6674b58821d50f86b7e47c76b41b",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/dolphin/dolphin_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/dolphin/dolphin_libretro.dll",
       "packageType": "dll",
       "entryFilename": "dolphin_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/dolphin/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/dolphin/icon.png",
       "verified": true
     },
     {
@@ -139,14 +139,14 @@
       "size": "28.0 MB",
       "sizeBytes": 29403648,
       "sha256": "b4da9bce39daab316f527b565d317ebf4d5d722defd9fb8a835badce1d881bbb",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/eden/eden_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/eden/eden_libretro.dll",
       "packageType": "dll",
       "entryFilename": "eden_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/eden/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/eden/icon.png",
       "verified": true
     },
     {
@@ -179,14 +179,14 @@
       "size": "21.6 MB",
       "sizeBytes": 22597120,
       "sha256": "f44a38a710b947a57af12db53346fb77648344d06c7d4aa0d2bbe82c809e5e81",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/flycast/flycast_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/flycast/flycast_libretro.dll",
       "packageType": "dll",
       "entryFilename": "flycast_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/flycast/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/flycast/icon.png",
       "verified": true
     },
     {
@@ -212,14 +212,14 @@
       "size": "8.5 MB",
       "sizeBytes": 8906449,
       "sha256": "04a8e4bde458ef64c3a2001541e76d524b1368411f8373741777fe460676eabb",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/genesis_plus_gx/genesis_plus_gx_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/genesis_plus_gx/genesis_plus_gx_libretro.dll",
       "packageType": "dll",
       "entryFilename": "genesis_plus_gx_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/genesis_plus_gx/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/genesis_plus_gx/icon.png",
       "verified": true
     },
     {
@@ -243,14 +243,14 @@
       "size": "3.4 MB",
       "sizeBytes": 3603456,
       "sha256": "cb5ccb80665ee58ddd7d17ec98b74d9d519c1ed5cfa6c6c69a67c24b732bb1ca",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/melonds/melonds_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/melonds/melonds_libretro.dll",
       "packageType": "dll",
       "entryFilename": "melonds_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/melonds/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/melonds/icon.png",
       "verified": true
     },
     {
@@ -276,14 +276,14 @@
       "size": "3.5 MB",
       "sizeBytes": 3709440,
       "sha256": "9d28fc675b4bd9e51c3998c7ea159b634ae3088d7b858aa439fbe4312decdcb6",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/mesen/mesen_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/mesen/mesen_libretro.dll",
       "packageType": "dll",
       "entryFilename": "mesen_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/mesen/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/mesen/icon.png",
       "verified": true
     },
     {
@@ -308,14 +308,14 @@
       "size": "2.7 MB",
       "sizeBytes": 2814433,
       "sha256": "87e7e86d9229af4f7616adda8bcaf4bf8f067a703904994ab3c6caca7a92b45c",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/mgba/mgba_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/mgba/mgba_libretro.dll",
       "packageType": "dll",
       "entryFilename": "mgba_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/mgba/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/mgba/icon.png",
       "verified": true
     },
     {
@@ -340,14 +340,14 @@
       "size": "7.7 MB",
       "sizeBytes": 8032509,
       "sha256": "f7b3d5894cc4968c69ae90081f95396bc89a8b241bbe14d1f82469848e4d8a44",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/mupen64plus_next/mupen64plus_next_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/mupen64plus_next/mupen64plus_next_libretro.dll",
       "packageType": "dll",
       "entryFilename": "mupen64plus_next_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/mupen64plus_next/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/mupen64plus_next/icon.png",
       "verified": true
     },
     {
@@ -372,23 +372,24 @@
       ],
       "repository": "https://github.com/PCSX2/pcsx2",
       "icon": "res://assets/images/catui/catui_placeholder.png",
+      "version": "685637d30b5e",
+      "upstreamCommit": "685637d30b5eaa8e5d7a587673a17577a92dcb88",
       "coreId": "pcsx2",
       "filename": "pcsx2_libretro.dll",
       "category": "cores",
-      "version": "be3f1a3dbddb",
-      "packageVersion": "",
-      "buildVersion": "be3f1a3dbddb",
-      "size": "25.3 MB",
-      "sizeBytes": 26483712,
-      "sha256": "be3f1a3dbddb29778145f9cdce77b10abbcb7baf3737bea10b0d3e8d588ddc9e",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/pcsx2/pcsx2_libretro.dll",
+      "packageVersion": "685637d30b5e",
+      "buildVersion": "aedb1657ac37",
+      "size": "21.6 MB",
+      "sizeBytes": 22630400,
+      "sha256": "aedb1657ac372ccdfd0aea14463f3834bc4b96ce34b50f404c163a3f764653cf",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/pcsx2/pcsx2_libretro.dll",
       "packageType": "dll",
       "entryFilename": "pcsx2_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/pcsx2/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/pcsx2/icon.png",
       "verified": true
     },
     {
@@ -416,14 +417,14 @@
       "size": "15.1 MB",
       "sizeBytes": 15837696,
       "sha256": "811e380190bfc35a2a17466cff27ddd005c046b0820ac553661a9121a54cc200",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/ppsspp/ppsspp_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/ppsspp/ppsspp_libretro.dll",
       "packageType": "dll",
       "entryFilename": "ppsspp_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/ppsspp/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/ppsspp/icon.png",
       "verified": true
     },
     {
@@ -451,12 +452,12 @@
       "size": "72.2 MB",
       "sizeBytes": 75713095,
       "sha256": "19394cd05ddb08afa4a8b699211d2bcad7cf869bda4c65dd18c30bf1cc3e8047",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/rpcs3/rpcs3_catui.zip",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/rpcs3/rpcs3_catui.zip",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.svg",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/rpcs3/icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/rpcs3/icon.svg",
       "verified": true
     },
     {
@@ -483,14 +484,14 @@
       "size": "2.8 MB",
       "sizeBytes": 2948608,
       "sha256": "7b391567ac1e7b8af17fd94f6c9341b7875bd3c52b8afc76a72cdbb554be89ef",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/snes9x/snes9x_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/snes9x/snes9x_libretro.dll",
       "packageType": "dll",
       "entryFilename": "snes9x_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/snes9x/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/snes9x/icon.png",
       "verified": true
     },
     {
@@ -519,14 +520,14 @@
       "size": "17.9 MB",
       "sizeBytes": 18738176,
       "sha256": "d10fb8eb6639fc45d4783c576d7e347b07e059f529abdb7cef2483e14eaf343a",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/swanstation/swanstation_libretro.dll",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/swanstation/swanstation_libretro.dll",
       "packageType": "dll",
       "entryFilename": "swanstation_libretro.dll",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/swanstation/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/swanstation/icon.png",
       "verified": true
     },
     {
@@ -556,12 +557,12 @@
       "size": "29.0 MB",
       "sizeBytes": 30439733,
       "sha256": "cf489c0889f9fc8c54440140d422e897e62ca92ed411a0cd011b2e6172ea8282",
-      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/shadps4/shadps4_catui.zip",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/shadps4/shadps4_catui.zip",
       "platforms": [
         "windows"
       ],
       "iconFile": "icon.png",
-      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/store-2026-10-15/store/cores/shadps4/icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/cores/shadps4/icon.png",
       "verified": true
     }
   ]

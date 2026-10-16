@@ -1,0 +1,15 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ce70f6b5..ab6066f0 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -462,7 +462,9 @@ else ()
+   list(APPEND BASE_SRCS "src/base/ftsystem.c")
+ endif ()
+ 
+-if (WIN32)
++# clang-cl builds use the Windows ABI but its resource dependency is not
++# required by shadPS4; skipping this metadata resource avoids rc.exe issues.
++if (WIN32 AND NOT (CMAKE_C_COMPILER_ID STREQUAL "Clang" AND CMAKE_C_SIMULATE_ID STREQUAL "MSVC"))
+   enable_language(RC)
+   list(APPEND BASE_SRCS builds/windows/ftdebug.c
+                         src/base/ftver.rc)

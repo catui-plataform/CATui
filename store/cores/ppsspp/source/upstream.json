@@ -1,0 +1,123 @@
+{
+  "repository": "https://github.com/hrydgard/ppsspp.git",
+  "commit": "891a7c6444d334f7d96c512d390648a00fd21186",
+  "integrationDirectory": "libretro",
+  "changedFiles": [],
+  "packageBaselineVerified": false,
+  "snapshot": {
+    "archive": "source.tar.gz",
+    "sha256": "1eb174322e706e07e05b487b01598f23237c644af1661874571aab0cda6d912a",
+    "size": 21222790,
+    "tree": "b9c2dce7abef8de39b52d0fac14300a4a014b26c",
+    "localCommit": "891a7c6444d334f7d96c512d390648a00fd21186",
+    "excludedPaths": [
+      "Windows/build-x64.cmd",
+      "Windows/build-x86.cmd",
+      "ext/vulkan/iOS/Frameworks/libMoltenVK.dylib",
+      "ext/vulkan/libvulkan.so",
+      "ext/vulkan/libvulkan.so.1",
+      "ext/vulkan/libvulkan.so.1.3.236",
+      "ext/vulkan/macOS/Frameworks/libMoltenVK.dylib",
+      "source_assets/ziptest.zip"
+    ],
+    "submodules": [
+      {
+        "path": "SDL/macOS",
+        "commit": "c387d93ab5910b5a6be78b4840a5bbbc452f3ac8"
+      },
+      {
+        "path": "assets/debugger",
+        "commit": "9776332f720c854ef26f325a0cf9e32c02115a9c"
+      },
+      {
+        "path": "ext/OpenXR-SDK",
+        "commit": "be392bf6949adeeabad5082aa79d12aacbda781f"
+      },
+      {
+        "path": "ext/SPIRV-Cross",
+        "commit": "4212eef67ed0ca048cb726a6767185504e7695e5"
+      },
+      {
+        "path": "ext/aemu_postoffice",
+        "commit": "9e533637b9a13bb0194c75cf43b0bf6d25d8101a"
+      },
+      {
+        "path": "ext/armips",
+        "commit": "62adab4ef30da765f5cf22a451eb08a59c54dc8b"
+      },
+      {
+        "path": "ext/cpu_features",
+        "commit": "fd4ffc1632db7b4e763bd28ffa6fc9d761cf3587"
+      },
+      {
+        "path": "ext/discord-rpc",
+        "commit": "963aa9f3e5ce81a4682c6ca3d136cddda614db33"
+      },
+      {
+        "path": "ext/freetype",
+        "commit": "063ed27f481f0bcd3962fd468e1546739d7d285a"
+      },
+      {
+        "path": "ext/glslang",
+        "commit": "50e0708ec3a5c16020c4f845c654b80b8edb80bd"
+      },
+      {
+        "path": "ext/libadrenotools",
+        "commit": "8fae8ce254dfc1344527e05301e43f37dea2df80"
+      },
+      {
+        "path": "ext/libchdr",
+        "commit": "8bba7745d758627258b315997a860039244cedaf"
+      },
+      {
+        "path": "ext/lua",
+        "commit": "7648485f14e8e5ee45e8e39b1eb4d3206dbd405a"
+      },
+      {
+        "path": "ext/miniupnp",
+        "commit": "27d13ca9beeb5541f5fbf11959dced03dac39972"
+      },
+      {
+        "path": "ext/nanosvg",
+        "commit": "478dbb8f7ed11c3d9b20b3986a8ee2283f483ef7"
+      },
+      {
+        "path": "ext/rapidjson",
+        "commit": "73063f5002612c6bf64fe24f851cd5cc0d83eef9"
+      },
+      {
+        "path": "ext/rcheevos",
+        "commit": "2ac45d357bce2906bb0f1438f3eaf8ce6e78e3c4"
+      },
+      {
+        "path": "ext/zstd",
+        "commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+      },
+      {
+        "path": "ffmpeg",
+        "commit": "b87f7c6d522d1edba77cfc4fac96ce48a236f806"
+      },
+      {
+        "path": "frametests",
+        "commit": "49a8baadc9f709e21ac6e76f0668521536e25526"
+      },
+      {
+        "path": "ios/MoltenVK",
+        "commit": "0bf904d2d1d159eb95bdefcd8432eee79ee1da14"
+      },
+      {
+        "path": "libretro/libretro-common",
+        "commit": "76a3d54feb0ee0ce9d59b90aa24694f3782063d3"
+      },
+      {
+        "path": "pspautotests",
+        "commit": "a3f220d0fdc57daa186140b550cc6de0c4945ab2"
+      }
+    ]
+  },
+  "licenseFile": "LICENSE.txt",
+  "package": {
+    "filename": "ppsspp_libretro.dll",
+    "sha256": "811e380190bfc35a2a17466cff27ddd005c046b0820ac553661a9121a54cc200"
+  }
+}

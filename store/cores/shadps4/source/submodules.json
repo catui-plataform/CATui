@@ -1,0 +1,5 @@
+{
+  "freetype.patch": "externals/freetype",
+  "libressl.patch": "externals/libressl",
+  "libusb.patch": "externals/libusb"
+}

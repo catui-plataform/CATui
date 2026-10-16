@@ -1,0 +1,86 @@
+{
+  "plan": {
+    "core": "pcsx2",
+    "expires": 1792207721,
+    "id": "be4933191deb335774dbb443",
+    "owner": "474757466304020490",
+    "sha": "685637d30b5eaa8e5d7a587673a17577a92dcb88",
+    "store_head": "a3a1fcc4f4220f9bfa821f069e819e223aabd5c0",
+    "version": "685637d30b5e"
+  },
+  "sha256": "aedb1657ac372ccdfd0aea14463f3834bc4b96ce34b50f404c163a3f764653cf",
+  "size": 22630400,
+  "filename": "pcsx2_libretro.dll",
+  "abi": true,
+  "runtime": {
+    "core": "pcsx2",
+    "passed": true,
+    "gameplayTested": false,
+    "evidence": [
+      {
+        "layer": "native",
+        "log": "native.log",
+        "scope": "identity/options/initialization/rejected-content/cleanup",
+        "sha256": "fdd3435f323dddf8c83919fc44ec93208355245b5d9ed0c432f131ee587528da"
+      },
+      {
+        "layer": "catui",
+        "log": "catui.log",
+        "scope": "LibretroSession/headless/initialization/rejected-content/cleanup",
+        "sha256": "1f6cd6fa171437eeb65df6a8c5b4c50a6c0b85a4d98da2404902b4146048af8a"
+      }
+    ]
+  },
+  "systemImports": [
+    "advapi32.dll",
+    "api-ms-win-core-memory-l1-1-5.dll",
+    "api-ms-win-core-memory-l1-1-6.dll",
+    "api-ms-win-core-path-l1-1-0.dll",
+    "avrt.dll",
+    "d3d11.dll",
+    "d3d12.dll",
+    "d3dcompiler_47.dll",
+    "dxgi.dll",
+    "gdi32.dll",
+    "imm32.dll",
+    "iphlpapi.dll",
+    "kernel32.dll",
+    "ole32.dll",
+    "oleaut32.dll",
+    "opengl32.dll",
+    "powrprof.dll",
+    "setupapi.dll",
+    "shell32.dll",
+    "user32.dll",
+    "version.dll",
+    "winhttp.dll",
+    "winmm.dll",
+    "ws2_32.dll"
+  ],
+  "integrationReview": {
+    "decision": "needs_review",
+    "summary": "The host adapter was written against the pre-change PCSX2 API but the upstream patch alters multiple interfaces it depends on, so the integration is not consistent with the target revision.",
+    "risks": [
+      "Host::Throttle signature changed to Throttle(bool vsync_start); the adapter/engine callers are not reconciled with this new ABI.",
+      "New pure/required symbols were added upstream (GSStartSavingMetrics, GSDumpSavedMetrics, GSIsSavingMetrics, GSToggleVideoCapture, GSResetStats, VMManager::Internal::GetCurrentRegion) that the adapter does not implement or account for.",
+      "VMBootParameters gained a game_config field and VMManager now validates game_config, but the adapter never sets it, so the -gamecfg path is inert.",
+      "The CU 'UserHacks_RewriteLargeSTCoords' / AdvancedFrameDisplay / DumpReplay* additions are not surfaced through the libretro core options in modern_main.cpp, leaving upstream behavior unreachable from the frontend.",
+      "GSDumpReplayer::SetFrameRange/SetLoopCount are now invoked from VMManager; the adapter's GS dump handling is not shown to support these, risking option mismatch.",
+      "CMake changes (ARCH_X86 gating of ENABLE_RAINTEGRATION, dxcompiler link, shader baking option) are not reflected in the adapter's build/runtime expectations.",
+      "GSCapture::FlushAudioOnly() is called during state load upstream while the adapter stubs the entire GSCapture namespace as no-ops, diverging from the real capture lifecycle."
+    ],
+    "target": "685637d30b5eaa8e5d7a587673a17577a92dcb88",
+    "base": "d073d75010090186b58eb38bfc78dfc2f3acd8c7",
+    "patchSha256": "d67bd920286ca1b606a48bf81b56afd2b78a8c8aab8150bf115e8ad2d46362aa",
+    "model": "deepseek-flash",
+    "effort": "standard",
+    "usage": {
+      "prompt_tokens": 26120,
+      "completion_tokens": 349,
+      "total_tokens": 26469,
+      "prompt_cache_hit_tokens": 25984,
+      "prompt_cache_miss_tokens": 136
+    }
+  },
+  "aiRepairFiles": []
+}

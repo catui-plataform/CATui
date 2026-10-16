@@ -1,0 +1,22 @@
+{
+  "archive": "source.tar.gz",
+  "sha256": "cdab23f4e070570d90289234c5da02faeb7f49bd5915021a6bdf7990bea25efc",
+  "size": 22928889,
+  "tree": "774261f76bc5e2267634b642ad1abe8ec2cd2362",
+  "localCommit": "685637d30b5eaa8e5d7a587673a17577a92dcb88",
+  "excludedPaths": [
+    ".github/workflows/scripts/linux/build-dependencies-qt.sh",
+    ".github/workflows/scripts/linux/build-dependencies-runner.sh",
+    ".github/workflows/scripts/linux/build-gammaray.sh",
+    ".github/workflows/scripts/macos/build-dependencies-universal.sh",
+    ".github/workflows/scripts/macos/build-dependencies.sh",
+    ".github/workflows/scripts/windows/build-dependencies-arm64.bat",
+    ".github/workflows/scripts/windows/build-dependencies.bat",
+    ".github/workflows/scripts/windows/build-gammaray.bat",
+    "3rdparty/winpixeventruntime/bin/WinPixEventRuntime.dll",
+    "3rdparty/winpixeventruntime/binarm64/WinPixEventRuntime.dll",
+    "3rdparty/winpixeventruntime/lib/WinPixEventRuntime.lib",
+    "3rdparty/winpixeventruntime/libarm64/WinPixEventRuntime.lib"
+  ],
+  "submodules": []
+}

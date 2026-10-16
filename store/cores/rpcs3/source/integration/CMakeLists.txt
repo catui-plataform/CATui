@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22)
+project(catui_rpcs3_proxy LANGUAGES CXX)
+add_library(rpcs3_libretro SHARED proxy.cpp)
+target_compile_features(rpcs3_libretro PRIVATE cxx_std_20)
+target_compile_definitions(rpcs3_libretro PRIVATE RETRO_EXPORTS)
+set_target_properties(rpcs3_libretro PROPERTIES PREFIX "")

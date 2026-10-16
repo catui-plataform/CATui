@@ -1,0 +1,251 @@
+{
+  "repository": "https://github.com/shadps4-emu/shadPS4.git",
+  "commit": "529ceb32f5546b820588f194b903cc39d08015fe",
+  "integrationDirectory": "src/libretro",
+  "changedFiles": [
+    "CMakeLists.txt",
+    "catui-libretro-smoke.ppm",
+    "documents/CATUI_LIBRETRO_MAINTAINER_README.md",
+    "documents/catui-libretro-benchmark.md",
+    "documents/catui-libretro.md",
+    "externals/CMakeLists.txt",
+    "sonic-balanced.json",
+    "sonic-performance.json",
+    "sonic-quality.json",
+    "sonic-validation.last.png",
+    "sonic-validation.png",
+    "src/common/assert.cpp",
+    "src/common/types.h",
+    "src/core/aerolib/stubs.cpp",
+    "src/core/catui_runtime.h",
+    "src/core/debug_state.cpp",
+    "src/core/debug_state.h",
+    "src/core/file_format/playgo_chunk.h",
+    "src/core/libraries/audio/audioout.cpp",
+    "src/core/libraries/font/fontft_internal.h",
+    "src/core/libraries/kernel/threads/mutex.cpp",
+    "src/core/libraries/kernel/threads/pthread.cpp",
+    "src/core/libraries/system/systemservice.cpp",
+    "src/core/libraries/usbd/usbd.cpp",
+    "src/core/signals.cpp",
+    "src/emulator.cpp",
+    "src/emulator.h",
+    "src/input/controller.cpp",
+    "src/libretro/CMakeLists.txt",
+    "src/libretro/catui_benchmark.cpp",
+    "src/libretro/catui_libretro_api.cpp",
+    "src/libretro/catui_libretro_api.h",
+    "src/libretro/catui_libretro_bridge.cpp",
+    "src/libretro/catui_libretro_bridge.h",
+    "src/libretro/catui_libretro_smoke.cpp",
+    "src/libretro/catui_ps4_host.cpp",
+    "src/libretro/catui_ps4_ipc.h",
+    "src/libretro/catui_ps4_proxy.cpp",
+    "src/libretro/catui_real_probe.cpp",
+    "src/libretro/catui_shadps4_backend.cpp",
+    "src/sdl_window.cpp",
+    "src/sdl_window.h",
+    "src/video_core/renderer_vulkan/vk_presenter.cpp"
+  ],
+  "licenseFile": "LICENSE",
+  "snapshot": {
+    "archive": "source.tar.gz",
+    "sha256": "07292d251d8a4ea8dce47a0ef0c6f49d2b8fde4fc12ee1fc9ebaf386ed653d69",
+    "size": 31189956,
+    "tree": "a05e4632217e6633a2f2dd1f93c4e659430d20ec",
+    "localCommit": "088512918c8bc620d15232b6bd7824f5c404aab7",
+    "excludedPaths": [
+      "src/dist/MacOSBundleInfo.plist.in",
+      "src/dist/net.shadps4.shadPS4.desktop",
+      "src/dist/net.shadps4.shadPS4.svg",
+      "src/dist/shadps4.ico",
+      "src/dist/shadps4.rc"
+    ],
+    "submodules": [
+      {
+        "path": "externals/CLI11",
+        "commit": "12ba4ac4dbaa6489cb07e01be796e2bc074ef4f4"
+      },
+      {
+        "path": "externals/ImGuiFileDialog",
+        "commit": "57a1c6a6d44bd99e844e3642d27851f6c065af62"
+      },
+      {
+        "path": "externals/LibAtrac9",
+        "commit": "946e05a9212976626a9f5e52f29c0a7202871f29"
+      },
+      {
+        "path": "externals/aacdec/fdk-aac",
+        "commit": "ee76460efbdb147e26d804c798949c23f174460b"
+      },
+      {
+        "path": "externals/abseil-cpp",
+        "commit": "76bb24329e8bf5f39704eb10d21b9a80befa7c81"
+      },
+      {
+        "path": "externals/cpp-httplib",
+        "commit": "28f8264d134a576422cd0f99f19719c2749d9e47"
+      },
+      {
+        "path": "externals/date",
+        "commit": "a45ea7c17b4a7f320e199b71436074bd624c9e15"
+      },
+      {
+        "path": "externals/discord-rpc",
+        "commit": "19f66e6dcabb2268965f453db9e5774ede43238f"
+      },
+      {
+        "path": "externals/epoll-shim",
+        "commit": "18159584bb3d17e601b9315a7398ace018251bdc"
+      },
+      {
+        "path": "externals/ext-boost",
+        "commit": "ca6f230e67be7cc45fc919057f07b2aee64dadc1"
+      },
+      {
+        "path": "externals/ext-wepoll",
+        "commit": "d3bb81035304a0dc6a5ca48ebf0f8cee1fe269e4"
+      },
+      {
+        "path": "externals/ffmpeg-core",
+        "commit": "94dde08c8a9e4271a93a2a7e4159e9fb05d30c0a"
+      },
+      {
+        "path": "externals/fmt",
+        "commit": "ec73fb72477d80926c758894a3ab2cb3994fd051"
+      },
+      {
+        "path": "externals/freetype",
+        "commit": "b91f75bd02db43b06d634591eb286d3eb0ce3b65"
+      },
+      {
+        "path": "externals/glslang",
+        "commit": "ba1640446f3826a518721d1f083f3a8cca1120c3"
+      },
+      {
+        "path": "externals/half",
+        "commit": "1ddada225144cac0de8f6b5c0dd9acffd99a2e68"
+      },
+      {
+        "path": "externals/hwinfo",
+        "commit": "8660006e0ca4aae5dda7a29e585968b50b0273b7"
+      },
+      {
+        "path": "externals/imgui",
+        "commit": "7e1b65d26d52e9dd199d889c148c72184de647b4"
+      },
+      {
+        "path": "externals/json",
+        "commit": "55f93686c01528224f448c19128836e7df245f72"
+      },
+      {
+        "path": "externals/libpng",
+        "commit": "c1cc0f3f4c3d4abd11ca68c59446a29ff6f95003"
+      },
+      {
+        "path": "externals/libressl",
+        "commit": "b0504086dbbc186724b0cc92e6ba1832c245de0b"
+      },
+      {
+        "path": "externals/libusb",
+        "commit": "d087ea86539ab1f1ec42faf86e2357e2fad126a6"
+      },
+      {
+        "path": "externals/magic_enum",
+        "commit": "a413fcc9c46a020a746907136a384c227f3cd095"
+      },
+      {
+        "path": "externals/mesa-kosmickrisp",
+        "commit": "af7dd0a35c071cecbfff32662675641d19e8e4db"
+      },
+      {
+        "path": "externals/minimp3",
+        "commit": "7b590fdcfa5a79c033e76eacc05d0c3e4c79f536"
+      },
+      {
+        "path": "externals/miniupnp",
+        "commit": "bf4215a7574f88aa55859db9db00e3ae58cf42d6"
+      },
+      {
+        "path": "externals/miniz",
+        "commit": "174573d60290f447c13a2b1b3405de2b96e27d6c"
+      },
+      {
+        "path": "externals/openal-soft",
+        "commit": "83ea7236c6f23fc98e2b62eb9c5b3abfd4b2be86"
+      },
+      {
+        "path": "externals/protobuf",
+        "commit": "5917ee224a7e47383a78acc129628511fe210dff"
+      },
+      {
+        "path": "externals/pugixml",
+        "commit": "caade5a28aad86b92a4b5337a9dc70c4ba73c5eb"
+      },
+      {
+        "path": "externals/robin-map",
+        "commit": "4ec1bf19c6a96125ea22062f38c2cf5b958e448e"
+      },
+      {
+        "path": "externals/sdl3",
+        "commit": "d5af35e3fbb5bb6555ed00e69740d52af2a4e877"
+      },
+      {
+        "path": "externals/sirit",
+        "commit": "fc2b42d5e57ee2f638676c0c02f7fd71934b596a"
+      },
+      {
+        "path": "externals/spdlog",
+        "commit": "b8944a4bcd478ee03375c9c50dc8d6c741f43f7b"
+      },
+      {
+        "path": "externals/toml11",
+        "commit": "a01fe3b4c14c6d7b99ee3f07c9e80058c6403097"
+      },
+      {
+        "path": "externals/tracy",
+        "commit": "143a53d1985b8e52a7590a0daca30a0a7c653b42"
+      },
+      {
+        "path": "externals/vma",
+        "commit": "f378e7b3f18f6e2b06b957f6ba7b1c7207d2a536"
+      },
+      {
+        "path": "externals/vulkan-headers",
+        "commit": "ee3b5caaa7e372715873c7b9c390ee1c3ca5db25"
+      },
+      {
+        "path": "externals/vulkan-loader",
+        "commit": "466498bc64eb77955c3b782f0127520548224de0"
+      },
+      {
+        "path": "externals/xbyak",
+        "commit": "44a72f369268f7d552650891b296693e91db86bb"
+      },
+      {
+        "path": "externals/xxhash",
+        "commit": "953a09abc39096da9e216b6eb0002c681cdc1199"
+      },
+      {
+        "path": "externals/zarchive",
+        "commit": "965b66c8d67b6b7e30fd63b3b75aa91a99ff303b"
+      },
+      {
+        "path": "externals/zlib-ng",
+        "commit": "fd0d263cedab1a136f40d65199987e3eaeecfcbd"
+      },
+      {
+        "path": "externals/zstd",
+        "commit": "5c7b7bad26808e6b40ac3b3d0075466e27738a9d"
+      },
+      {
+        "path": "externals/zydis",
+        "commit": "120e0e705f8e3b507dc49377ac2879979f0d545c"
+      }
+    ]
+  },
+  "package": {
+    "filename": "shadps4_catui.zip",
+    "sha256": "cf489c0889f9fc8c54440140d422e897e62ca92ed411a0cd011b2e6172ea8282"
+  }
+}

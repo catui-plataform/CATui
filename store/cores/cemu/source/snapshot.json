@@ -1,0 +1,45 @@
+{
+  "archive": "source.tar.gz",
+  "sha256": "ce91e4ce28235a93b11fdee62a24592b6dde846c161edca9b62357e647cd5430",
+  "size": 21328991,
+  "tree": "fd7f3c0af5b9e87441d27d5231d3112c90e86bc9",
+  "localCommit": "4e3c824faa00f6b85782db019f20f29f063f3a2a",
+  "excludedPaths": [
+    "dist/linux/appimage.sh",
+    "dist/linux/info.cemu.Cemu.desktop",
+    "dist/linux/info.cemu.Cemu.metainfo.xml",
+    "dist/linux/info.cemu.Cemu.png",
+    "dist/network_services.xml",
+    "dist/windows/Cemu.manifest"
+  ],
+  "submodules": [
+    {
+      "path": "dependencies/Vulkan-Headers",
+      "commit": "01393c3df0e5285b54ee6527466513f9e614be94"
+    },
+    {
+      "path": "dependencies/ZArchive",
+      "commit": "d2c717730092c7bf8cbb033b12fd4001b7c4d932"
+    },
+    {
+      "path": "dependencies/cubeb",
+      "commit": "2071354a69aca7ed6df3b4222e305746c2113f60"
+    },
+    {
+      "path": "dependencies/imgui",
+      "commit": "f65bcf481ab34cd07d3909aab1479f409fa79f2f"
+    },
+    {
+      "path": "dependencies/metal-cpp",
+      "commit": "a63bd172ddcba73a3d87ca32032b66ad41ddb9a6"
+    },
+    {
+      "path": "dependencies/vcpkg",
+      "commit": "9849e070ad4c3383890fb1c80ae0c54325e2484a"
+    },
+    {
+      "path": "dependencies/xbyak_aarch64",
+      "commit": "904b8923457f3ec0d6f82ea2d6832a792851194d"
+    }
+  ]
+}

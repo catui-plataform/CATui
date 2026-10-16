@@ -1,0 +1,20 @@
+{
+  "cmake": [
+    "-DENABLE_LIBRETRO=ON",
+    "-DENABLE_QT=OFF"
+  ],
+  "targets": [
+    "eden_libretro"
+  ],
+  "outputs": [
+    {
+      "name": "eden_libretro.dll",
+      "destination": "eden_libretro.dll"
+    }
+  ],
+  "requirements": [
+    "MSVC x64",
+    "Ninja",
+    "Eden CPM dependencies and Vulkan SDK"
+  ]
+}

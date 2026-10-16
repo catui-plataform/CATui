@@ -1,0 +1,33 @@
+{
+  "cmake": [
+    "-DENABLE_CATUI_LIBRETRO=ON",
+    "-DCMAKE_C_COMPILER=clang-cl",
+    "-DCMAKE_CXX_COMPILER=clang-cl"
+  ],
+  "targets": [
+    "shadps4_libretro",
+    "shadps4_libretro_proxy",
+    "catui_shadps4_host"
+  ],
+  "outputs": [
+    {
+      "name": "shadps4_libretro.dll",
+      "destination": "shadps4_libretro.dll"
+    },
+    {
+      "name": "shadps4_libretro_engine.dll",
+      "destination": "shadps4_libretro_engine.dll"
+    },
+    {
+      "name": "catui_shadps4_host.exe",
+      "destination": "catui_shadps4_host.exe"
+    }
+  ],
+  "requirements": [
+    "clang-cl",
+    "MSVC x64 SDK",
+    "Ninja",
+    "Vulkan SDK",
+    "shadPS4 upstream dependencies"
+  ]
+}

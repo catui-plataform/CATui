@@ -1,0 +1,261 @@
+{
+  "archive": "source.tar.gz",
+  "sha256": "abaa345c1c895a76c420a8f219c542f9cff8248aca34a1a9f0073c876e7abe9f",
+  "size": 33787677,
+  "tree": "b7c1ac4af34c21a6bf87f96328815f261fc9675e",
+  "localCommit": "e36e9df2dcc1487acdb1dc7725766f1f5ba029b5",
+  "excludedPaths": [
+    "core/deps/libzip/regress/bigzero-zip.zip",
+    "core/deps/libzip/regress/bogus.zip",
+    "core/deps/libzip/regress/broken.zip",
+    "core/deps/libzip/regress/changing-size-muchl.zip",
+    "core/deps/libzip/regress/changing-size-muchlo.zip",
+    "core/deps/libzip/regress/changing-size-muchlonger.zip",
+    "core/deps/libzip/regress/changing-size.zip",
+    "core/deps/libzip/regress/cm-default.zip",
+    "core/deps/libzip/regress/empty-pkware.zip",
+    "core/deps/libzip/regress/encrypt-1234.zip",
+    "core/deps/libzip/regress/encrypt-aes128-noentropy.zip",
+    "core/deps/libzip/regress/encrypt-aes128.zip",
+    "core/deps/libzip/regress/encrypt-aes192-noentropy.zip",
+    "core/deps/libzip/regress/encrypt-aes192.zip",
+    "core/deps/libzip/regress/encrypt-aes256-noentropy.zip",
+    "core/deps/libzip/regress/encrypt-aes256.zip",
+    "core/deps/libzip/regress/encrypt-none.zip",
+    "core/deps/libzip/regress/encrypt-pkware-noentropy-2.zip",
+    "core/deps/libzip/regress/encrypt-pkware-noentropy.zip",
+    "core/deps/libzip/regress/encrypt.zip",
+    "core/deps/libzip/regress/encrypt_plus_extra.zip",
+    "core/deps/libzip/regress/encrypt_plus_extra_modified_c.zip",
+    "core/deps/libzip/regress/encrypt_plus_extra_modified_l.zip",
+    "core/deps/libzip/regress/extra_field_align_1-0.zip",
+    "core/deps/libzip/regress/extra_field_align_1-ef_00.zip",
+    "core/deps/libzip/regress/extra_field_align_1-ef_ff.zip",
+    "core/deps/libzip/regress/extra_field_align_1-ff.zip",
+    "core/deps/libzip/regress/extra_field_align_2-0.zip",
+    "core/deps/libzip/regress/extra_field_align_2-ef_00.zip",
+    "core/deps/libzip/regress/extra_field_align_2-ef_ff.zip",
+    "core/deps/libzip/regress/extra_field_align_2-ff.zip",
+    "core/deps/libzip/regress/extra_field_align_3-0.zip",
+    "core/deps/libzip/regress/extra_field_align_3-ef_00.zip",
+    "core/deps/libzip/regress/extra_field_align_3-ef_ff.zip",
+    "core/deps/libzip/regress/extra_field_align_3-ff.zip",
+    "core/deps/libzip/regress/extra_field_align_4-ff.zip",
+    "core/deps/libzip/regress/filename_duplicate.zip",
+    "core/deps/libzip/regress/filename_duplicate_empty.zip",
+    "core/deps/libzip/regress/filename_empty.zip",
+    "core/deps/libzip/regress/fileorder.zip",
+    "core/deps/libzip/regress/firstsecond-split-deflated.zip",
+    "core/deps/libzip/regress/firstsecond-split-stored.zip",
+    "core/deps/libzip/regress/firstsecond.zip",
+    "core/deps/libzip/regress/foo-stored.zip",
+    "core/deps/libzip/regress/gap-add.zip",
+    "core/deps/libzip/regress/gap-delete.zip",
+    "core/deps/libzip/regress/gap-replace.zip",
+    "core/deps/libzip/regress/gap.zip",
+    "core/deps/libzip/regress/incons-archive-comment-longer.zip",
+    "core/deps/libzip/regress/incons-archive-comment-shorter.zip",
+    "core/deps/libzip/regress/incons-cdoffset.zip",
+    "core/deps/libzip/regress/incons-central-compression-method.zip",
+    "core/deps/libzip/regress/incons-central-compsize-larger-toolarge.zip",
+    "core/deps/libzip/regress/incons-central-compsize-larger.zip",
+    "core/deps/libzip/regress/incons-central-compsize-smaller.zip",
+    "core/deps/libzip/regress/incons-central-crc.zip",
+    "core/deps/libzip/regress/incons-central-date.zip",
+    "core/deps/libzip/regress/incons-central-file-comment-longer.zip",
+    "core/deps/libzip/regress/incons-central-file-comment-shorter.zip",
+    "core/deps/libzip/regress/incons-central-magic-bad.zip",
+    "core/deps/libzip/regress/incons-central-magic-bad2.zip",
+    "core/deps/libzip/regress/incons-central-size-larger.zip",
+    "core/deps/libzip/regress/incons-data.zip",
+    "core/deps/libzip/regress/incons-ef-central-size-wrong.zip",
+    "core/deps/libzip/regress/incons-ef-local-id-size.zip",
+    "core/deps/libzip/regress/incons-ef-local-id.zip",
+    "core/deps/libzip/regress/incons-ef-local-size.zip",
+    "core/deps/libzip/regress/incons-eocd-magic-bad.zip",
+    "core/deps/libzip/regress/incons-file-count-high.zip",
+    "core/deps/libzip/regress/incons-file-count-low.zip",
+    "core/deps/libzip/regress/incons-file-count-overflow.zip",
+    "core/deps/libzip/regress/incons-local-compression-method.zip",
+    "core/deps/libzip/regress/incons-local-compsize-larger.zip",
+    "core/deps/libzip/regress/incons-local-compsize-smaller.zip",
+    "core/deps/libzip/regress/incons-local-crc.zip",
+    "core/deps/libzip/regress/incons-local-filename-long.zip",
+    "core/deps/libzip/regress/incons-local-filename-missing.zip",
+    "core/deps/libzip/regress/incons-local-filename-short.zip",
+    "core/deps/libzip/regress/incons-local-filename.zip",
+    "core/deps/libzip/regress/incons-local-magic-bad.zip",
+    "core/deps/libzip/regress/incons-local-size-larger.zip",
+    "core/deps/libzip/regress/junk-at-end.zip",
+    "core/deps/libzip/regress/junk-at-start.zip",
+    "core/deps/libzip/regress/lzma-no-eos.zip",
+    "core/deps/libzip/regress/manyfiles-zip.zip",
+    "core/deps/libzip/regress/multidisk.zip",
+    "core/deps/libzip/regress/rename_ok.zip",
+    "core/deps/libzip/regress/stored-no-eos.zip",
+    "core/deps/libzip/regress/streamed-zip64.zip",
+    "core/deps/libzip/regress/streamed.zip",
+    "core/deps/libzip/regress/test-cp437-comment-utf-8.zip",
+    "core/deps/libzip/regress/test-cp437-fc-utf-8-filename.zip",
+    "core/deps/libzip/regress/test-cp437-fc.zip",
+    "core/deps/libzip/regress/test-cp437.zip",
+    "core/deps/libzip/regress/test-utf8-unmarked.zip",
+    "core/deps/libzip/regress/test-utf8.zip",
+    "core/deps/libzip/regress/test.zip",
+    "core/deps/libzip/regress/test2.zip",
+    "core/deps/libzip/regress/test_open_multiple.zip",
+    "core/deps/libzip/regress/testbuffer.zip",
+    "core/deps/libzip/regress/testbuffer_reopen.zip",
+    "core/deps/libzip/regress/testbzip2.zip",
+    "core/deps/libzip/regress/testchanged.zip",
+    "core/deps/libzip/regress/testchangedlocal.zip",
+    "core/deps/libzip/regress/testcomment.zip",
+    "core/deps/libzip/regress/testcomment13.zip",
+    "core/deps/libzip/regress/testcommentremoved.zip",
+    "core/deps/libzip/regress/testdeflated.zip",
+    "core/deps/libzip/regress/testdeflated2.zip",
+    "core/deps/libzip/regress/testdir.zip",
+    "core/deps/libzip/regress/testempty.zip",
+    "core/deps/libzip/regress/testextrabytes.zip",
+    "core/deps/libzip/regress/testfile-UTF8.zip",
+    "core/deps/libzip/regress/testfile-cp437.zip",
+    "core/deps/libzip/regress/testfile-ef.zip",
+    "core/deps/libzip/regress/testfile-lzma.zip",
+    "core/deps/libzip/regress/testfile-plus-extra.zip",
+    "core/deps/libzip/regress/testfile-stored-dos.zip",
+    "core/deps/libzip/regress/testfile-torrentzip-modified.zip",
+    "core/deps/libzip/regress/testfile-torrentzip.zip",
+    "core/deps/libzip/regress/testfile-xz.zip",
+    "core/deps/libzip/regress/testfile-zstd.zip",
+    "core/deps/libzip/regress/testfile.zip",
+    "core/deps/libzip/regress/testfile0.zip",
+    "core/deps/libzip/regress/testfile2014.zip",
+    "core/deps/libzip/regress/teststdin.zip",
+    "core/deps/libzip/regress/teststored.zip",
+    "core/deps/libzip/regress/utf-8-standardization-input.zip",
+    "core/deps/libzip/regress/utf-8-standardization-output.zip",
+    "core/deps/libzip/regress/zip-in-archive-comment.zip",
+    "core/deps/libzip/regress/zip64-3mf.zip",
+    "core/deps/libzip/regress/zip64.zip",
+    "core/deps/libzip/regress/zipcmp_zip_dir.zip",
+    "fonts/Roboto-Bold.ttf.zip",
+    "fonts/Roboto-Medium.ttf.zip",
+    "fonts/biosfont.bin.zip",
+    "fonts/fa-solid-900.ttf.zip",
+    "fonts/printer_ascii12x24.bin.zip",
+    "fonts/printer_ascii8x16.bin.zip",
+    "fonts/printer_kanji16x16.bin.zip",
+    "fonts/printer_kanji24x24.bin.zip",
+    "resources/flash/alienfnt.nvmem.zip",
+    "resources/flash/dirtypig.nvmem.zip",
+    "resources/flash/dirtypig.nvmem2.zip",
+    "resources/flash/f355.nvmem.zip",
+    "resources/flash/f355twin.nvmem.zip",
+    "resources/flash/f355twn2.nvmem.zip",
+    "resources/flash/gunsur2.nvmem.zip",
+    "resources/flash/magicpop.nvmem.zip",
+    "resources/flash/mazan.nvmem.zip",
+    "resources/flash/ochaken.nvmem.zip",
+    "resources/flash/otrigger.nvmem.zip",
+    "resources/flash/puyomedal.nvmem.zip",
+    "resources/flash/smarinef.nvmem.zip",
+    "resources/flash/unomedal.nvmem.zip",
+    "resources/flash/vf4.nvmem.zip",
+    "resources/flash/vf4evob.nvmem.zip",
+    "resources/flash/vf4tuned.nvmem.zip",
+    "resources/flash/westdrmg.nvmem.zip",
+    "resources/flash/wldkicks.nvmem.zip",
+    "resources/flash/wldkicksj.nvmem.zip",
+    "resources/flash/wldkicksu.nvmem.zip"
+  ],
+  "submodules": [
+    {
+      "path": "core/deps/DreamPicoPort-API",
+      "commit": "e06d9f6c59833fc7bb7f2a33c960614489811ef8"
+    },
+    {
+      "path": "core/deps/SDL",
+      "commit": "00d4f1c2c4ad2dc95d26b18743541f57b1dca56d"
+    },
+    {
+      "path": "core/deps/Spout",
+      "commit": "2110a918e720688f3cb2118302fd153db8745ace"
+    },
+    {
+      "path": "core/deps/Syphon",
+      "commit": "53ec412a78b246c84cedcb4a2a5b92852704d61d"
+    },
+    {
+      "path": "core/deps/Vulkan-Headers",
+      "commit": "b5c8f996196ba4aa6d8f97e52b5d3b6e70f7e4e2"
+    },
+    {
+      "path": "core/deps/VulkanMemoryAllocator",
+      "commit": "1d8f600fd424278486eade7ed3e877c99f0846b1"
+    },
+    {
+      "path": "core/deps/asio",
+      "commit": "d3402006e84efb6114ff93e4f2b8508412ed80d5"
+    },
+    {
+      "path": "core/deps/breakpad",
+      "commit": "1ab24bcc817ebe629bf77daa53529d02361cb1e9"
+    },
+    {
+      "path": "core/deps/discord-rpc",
+      "commit": "c62c34d37cd90b75187a1212e13ce4145bafbdd7"
+    },
+    {
+      "path": "core/deps/freetype",
+      "commit": "0a0221a1347e2f1e07c395263540026e9a0aa7c7"
+    },
+    {
+      "path": "core/deps/gamesdk",
+      "commit": "4ac9952e6a5b3e0846003cb156b4a664178b7549"
+    },
+    {
+      "path": "core/deps/glslang",
+      "commit": "fc9889c889561c5882e83819dcaffef5ed45529b"
+    },
+    {
+      "path": "core/deps/googletest",
+      "commit": "e39786088138f2749d64e9e90e0f9902daa77c40"
+    },
+    {
+      "path": "core/deps/libadrenotools",
+      "commit": "8fae8ce254dfc1344527e05301e43f37dea2df80"
+    },
+    {
+      "path": "core/deps/libchdr",
+      "commit": "5f82799f2c8cad1e9cd26d39a0f8d36369a5534b"
+    },
+    {
+      "path": "core/deps/libjuice",
+      "commit": "77daa8befd828046169adbb012d8de928bfdcdd4"
+    },
+    {
+      "path": "core/deps/luabridge",
+      "commit": "5d21e35633a1f87ed08af115b07d3386096f792b"
+    },
+    {
+      "path": "core/deps/oboe",
+      "commit": "a81bb9f87d4105b84b682685d3bfbb5beca371d1"
+    },
+    {
+      "path": "core/deps/rcheevos",
+      "commit": "3106e6d3d274b63c59976cb07dda94a292ab45ca"
+    },
+    {
+      "path": "core/deps/tinygettext",
+      "commit": "41572a67f96013691685a38f0032f3c97aa34f79"
+    },
+    {
+      "path": "core/deps/websocketpp",
+      "commit": "1b11fd301531e6df35a6107c1e8665b1e77a2d8e"
+    },
+    {
+      "path": "core/deps/xbyak",
+      "commit": "0d67fd1530016b7c56f3cd74b3fca920f4c3e2b4"
+    }
+  ]
+}

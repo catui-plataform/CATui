@@ -5,11 +5,10 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const destination = join(root, 'store', 'catalog.json');
-const previous = existsSync(destination) ? JSON.parse(readFileSync(destination, 'utf8')) : {};
 const refIndex = process.argv.indexOf('--ref');
-const contentRef = refIndex >= 0 ? process.argv[refIndex + 1] : previous.contentRef;
+const contentRef = refIndex >= 0 ? process.argv[refIndex + 1] : 'main';
 if (!contentRef || !/^[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(contentRef)) {
-  throw new Error('Provide a new store tag with --ref store-YYYY-MM-DD.');
+  throw new Error('Provide a valid branch or commit with --ref.');
 }
 const raw = `https://raw.githubusercontent.com/catui-plataform/CATui/${contentRef}/store/cores`;
 // Preserve the published order. Add new packages to this list explicitly.
@@ -59,7 +58,7 @@ const items = ids.map(id => {
 const output = JSON.stringify({ ok: true, schemaVersion: 1, contentRef, items }, null, 2) + '\n';
 if (process.argv.includes('--check')) {
   if (readFileSync(destination, 'utf8') !== output) throw new Error('Catalog is stale. Run node store/build-catalog.mjs.');
-  console.log(`Verified ${items.length} packages, hashes and immutable URLs.`);
+  console.log(`Verified ${items.length} packages, hashes and download URLs.`);
 } else {
   writeFileSync(destination, output);
   console.log(`Built catalog for ${items.length} packages at ${contentRef}.`);

@@ -1,0 +1,15 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7ab04ab..3a04ce7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -364,7 +364,9 @@ if(HAVE_MEMMEM)
+ endif()
+ 
+ check_include_files(endian.h HAVE_ENDIAN_H)
+-if(HAVE_ENDIAN_H)
++# On Windows clang-cl may expose a header named endian.h without the POSIX
++# conversion macros. Use LibreSSL's compatibility shim in that environment.
++if(HAVE_ENDIAN_H AND NOT WIN32)
+ 	add_definitions(-DHAVE_ENDIAN_H)
+ endif()
+ 

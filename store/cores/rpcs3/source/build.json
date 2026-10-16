@@ -1,0 +1,60 @@
+{
+  "cmake": [
+    "-DUSE_NATIVE_INSTRUCTIONS=OFF",
+    "-DUSE_PRECOMPILED_HEADERS=OFF",
+    "-DBUILD_LLVM=OFF",
+    "-DSTATIC_LINK_LLVM=ON",
+    "-DUSE_DISCORD_RPC=OFF",
+    "-DUSE_FAUDIO=OFF",
+    "-DUSE_STATIC_MSVC_RUNTIME=ON"
+  ],
+  "targets": [
+    "rpcs3"
+  ],
+  "extra": [
+    [
+      "cmake",
+      "-S",
+      "rpcs3/catui",
+      "-B",
+      "catui-proxy",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release"
+    ],
+    [
+      "cmake",
+      "--build",
+      "catui-proxy",
+      "--config",
+      "Release",
+      "--parallel",
+      "4"
+    ]
+  ],
+  "outputs": [
+    {
+      "name": "rpcs3.exe",
+      "destination": "rpcs3/rpcs3.exe"
+    },
+    {
+      "name": "rpcs3_libretro.dll",
+      "destination": "rpcs3/rpcs3_libretro.dll",
+      "search": "catui-proxy"
+    }
+  ],
+  "qtDeploy": "rpcs3/rpcs3.exe",
+  "runtimeDirectories": [
+    "bin",
+    "build/bin",
+    "catui-build/bin"
+  ],
+  "runtimeDestination": "rpcs3",
+  "requirements": [
+    "MSVC x64",
+    "Qt6_DIR with release runtime and windeployqt",
+    "LLVM_DIR with RPCS3-compatible static LLVM",
+    "Vulkan SDK",
+    "RPCS3 upstream dependencies"
+  ]
+}
