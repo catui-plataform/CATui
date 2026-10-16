@@ -1,14 +1,14 @@
 {
   "plan": {
     "core": "eden",
-    "expires": 1792263568,
-    "id": "c7718069a381caec41061168",
+    "expires": 1792272932,
+    "id": "c19889d7839a74ccf52c135a",
     "owner": "474757466304020490",
-    "sha": "d8c6c59b679867d2595fdc0953df033475e23380",
-    "store_head": "735830d430a0f68c7a2f8cd7e3be352ce0bb0b98",
-    "version": "d8c6c59b6798"
+    "sha": "e0d47f2790e3f758fa2188926a0bb2f56af6b310",
+    "store_head": "67b0b4bf068cdc01a4c8beb776163074e9cec51f",
+    "version": "e0d47f2790e3"
   },
-  "sha256": "3db7b4c7f3c4ec49a3883ea683a326962d06fec2a76f51d44fd21603490a9e68",
+  "sha256": "5887c143b6a32dce963269b24b377470b9b7a38f3fbacf6a3409411af4f21cb0",
   "size": 31309824,
   "filename": "eden_libretro.dll",
   "abi": true,
@@ -27,43 +27,32 @@
         "layer": "catui",
         "log": "catui.log",
         "scope": "LibretroSession/headless/initialization/rejected-content/cleanup",
-        "sha256": "48833c201b0097d80e9a1a1049b0a69e0e97b6d05a014713f13570de11068c3b"
+        "sha256": "d9f6b7519f4c77cba413f59b97c0fe470d3522920ed1ff82dab8fff1a742e9df"
       }
     ]
   },
   "systemImports": [],
   "integrationReview": {
     "decision": "needs_review",
-    "summary": "The CATui libretro environment exposes core options and settings that are out of sync with the approved upstream changes: it still offers GpuFenceBehavior::Strict and 'strict' values removed upstream, keeps AudioEngine Oboe related handling while upstream removed Oboe, and defines AnisotropyMode entries beyond upstream's list. These option/ABI mismatches need alignment before continuing.",
+    "summary": "The adapter introduces a non-standard CATui environment command (0x20000u | 0x100u) to fetch a game/mod directory and includes several language option mappings that may not match upstream settings. These, plus the large unverified libretro_core.cpp excerpt, require review against the approved upstream ABI/options before integration can continue.",
     "risks": [
-      "Core option 'eden_gpu_fence' still maps to Settings::GpuFenceBehavior::Strict, which the upstream enum diff removes, causing an invalid/unknown enum value.",
-      "Legacy and v2 option lists expose values (e.g. strict) not present in upstream settings_enums, risking option write failures or unsupported configuration.",
-      "Audio engine handling may reference Oboe sink/engine values removed in the upstream sink_details/settings_enums changes."
+      "Uses a custom non-libretro environment command (0x20000u | 0x100u) whose semantics are not part of the standard retro_environment ABI; integration compatibility with the host cannot be confirmed.",
+      "Legacy variable list for eden_language uses 'portuguese_br' which does not match any defined option value ('brazilian_portuguese'), while v2 definitions include additional languages; option/ABI mismatch across versions.",
+      "libretro_core.cpp excerpt is truncated, so host callback, controller/rumble, audio, graphics, reset/shutdown and embedded-resource handling cannot be verified from this review."
     ],
-    "target": "d8c6c59b679867d2595fdc0953df033475e23380",
-    "base": "2000fdfb7b27e5e2546098b44268fc74887b22a5",
-    "patchSha256": "8e6007722f22776c998877823fff49c1f62b596f5f1005cea1a3c9b9488b42d8",
+    "target": "e0d47f2790e3f758fa2188926a0bb2f56af6b310",
+    "base": "d8c6c59b679867d2595fdc0953df033475e23380",
+    "patchSha256": "ccd73927a6b90ae35129a2e7e2bebe67ca6be39989ce1528ed864f4250d7ea83",
     "model": "deepseek-flash",
     "effort": "standard",
     "usage": {
-      "prompt_tokens": 31555,
-      "completion_tokens": 196,
-      "total_tokens": 31751,
-      "prompt_cache_hit_tokens": 31360,
-      "prompt_cache_miss_tokens": 195
+      "prompt_tokens": 12950,
+      "completion_tokens": 227,
+      "total_tokens": 13177,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 12950
     }
   },
-  "sourceFixFiles": [
-    "src/eden_libretro/libretro_core.cpp"
-  ],
-  "aiRepairFiles": [
-    "src/common/settings_enums.h",
-    "src/core/hle/service/am/frontend/applets.cpp",
-    "src/video_core/renderer_base.cpp",
-    "src/video_core/renderer_vulkan/renderer_vulkan.cpp",
-    "src/common/sparse_large_vector.cpp",
-    "src/common/zbic_compression.cpp",
-    "src/core/launch_params.cpp",
-    "src/eden_libretro/environment.cpp"
-  ]
+  "sourceFixFiles": [],
+  "aiRepairFiles": []
 }

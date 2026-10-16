@@ -1,9 +1,9 @@
 {
   "archive": "source.tar.gz",
-  "sha256": "d833ae9b24b65c8c6ce78ea14e591c89d53f7913fd9f262acf1b5fe79a32b818",
-  "size": 7560485,
-  "tree": "cd497ab4301ca626415fa1decde59026b8e2fe2c",
-  "localCommit": "d8c6c59b679867d2595fdc0953df033475e23380",
+  "sha256": "1852506c0c928624940daa29160fbb63d81a99e552803df0b54232628bbf2924",
+  "size": 7663390,
+  "tree": "b39103a1926bd1a631d12b50bc1aae22e757c332",
+  "localCommit": "e0d47f2790e3f758fa2188926a0bb2f56af6b310",
   "excludedPaths": [
     "dist/72-eden-input.rules",
     "dist/Assets.car",
