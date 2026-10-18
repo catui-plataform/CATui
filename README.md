@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/catui-plataform/CATui/releases">
-    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcatui-plataform%2FCATui%2Fmain%2F.github%2Fbadges%2Frelease.json&amp;style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Latest release" />
+  <a href="https://github.com/catui-plataform/CATui/releases/latest">
+    <img src="https://img.shields.io/github/v/release/catui-plataform/CATui?style=for-the-badge&amp;logo=github&amp;logoColor=white&amp;label=Latest%20release&amp;color=7CB342" alt="Latest release" />
   </a>
 </p>
 
