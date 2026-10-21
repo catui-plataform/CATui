@@ -486,7 +486,7 @@
     },
     {
       "id": "pcsx2",
-      "title": "PCSX2 CATui",
+      "title": "PCSX2",
       "author": "PCSX2",
       "system": "PS2",
       "description": "PlayStation 2 emulator. Requires BIOS.",
@@ -598,7 +598,7 @@
     {
       "id": "rpcs3",
       "title": "RPCS3",
-      "author": "RPCS3 CATUI",
+      "author": "RPCS3",
       "system": "PS3",
       "filename": "rpcs3_catui.zip",
       "description": "PlayStation 3 emulator. Requires firmware.",
@@ -745,7 +745,7 @@
     },
     {
       "title": "shadPS4",
-      "author": "shadPS4 CATUI",
+      "author": "shadPS4",
       "version": "0.20.0",
       "system": "ps4",
       "filename": "shadps4_catui.zip",
