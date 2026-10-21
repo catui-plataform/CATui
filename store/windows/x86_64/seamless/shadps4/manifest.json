@@ -1,0 +1,37 @@
+{
+  "id": "shadps4_standalone",
+  "title": "shadPS4",
+  "author": "shadPS4",
+  "system": "ps4",
+  "description": "PlayStation 4 emulator. Requires compatible extracted game content.",
+  "extensions": [
+    "pkg",
+    "fpkg",
+    "elf",
+    "self",
+    "iso",
+    "folder"
+  ],
+  "filename": "shadps4-windows-x86_64.zip",
+  "packageType": "archive",
+  "entryFilename": "shadPS4.exe",
+  "version": "0.20.0",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "windows"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "repository": "https://github.com/shadps4-emu/shadPS4",
+  "icon": "icon.png",
+  "upstreamRelease": "v.0.20.0",
+  "upstreamDownloadUrl": "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.20.0/shadps4-win64-sdl-2026-0.20.0.zip",
+  "upstreamSha256": "d5cdc55c57e85e5fe44ff867b420246dc832077356d943ccc43c5d950c878b37",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "RetroAchievements does not support this console."
+  }
+}

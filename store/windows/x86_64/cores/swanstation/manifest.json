@@ -1,0 +1,33 @@
+{
+  "id": "swanstation",
+  "title": "SwanStation",
+  "author": "SwanStation",
+  "system": "PS1",
+  "description": "PlayStation emulator.",
+  "extensions": [
+    "cue",
+    "bin",
+    "iso",
+    "img",
+    "chd",
+    "pbp",
+    "m3u"
+  ],
+  "repository": "https://github.com/libretro/swanstation",
+  "icon": "icon.png",
+  "retroachievements": {
+    "supported": true,
+    "mode": "frontend",
+    "consoleIds": [
+      12
+    ],
+    "formats": [
+      "iso",
+      "bin",
+      "cue",
+      "img",
+      "chd",
+      "m3u"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "eden_standalone",
+  "title": "Eden",
+  "author": "Eden",
+  "system": "Switch",
+  "description": "Nintendo Switch emulator. Requires your own keys and firmware.",
+  "extensions": [
+    "nsp",
+    "xci",
+    "nro",
+    "nca",
+    "nso"
+  ],
+  "filename": "eden-windows-x86_64.zip",
+  "packageType": "archive",
+  "entryFilename": "eden.exe",
+  "version": "0.2.1",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "windows"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "repository": "https://git.eden-emu.dev/eden-emu/eden",
+  "icon": "icon.png",
+  "upstreamRelease": "v0.2.1",
+  "upstreamDownloadUrl": "https://stable.eden-emu.dev/v0.2.1/Eden-Windows-v0.2.1-amd64-clang-pgo.zip",
+  "upstreamSha256": "6c1b53ce325170a026cc0f87098380027dc6170d94ba95f913aab7596fd097cb",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "RetroAchievements does not support this console."
+  }
+}

@@ -14,5 +14,20 @@
     "chd"
   ],
   "repository": "https://github.com/hrydgard/ppsspp",
-  "icon": "icon.png"
+  "icon": "icon.png",
+  "retroachievements": {
+    "supported": true,
+    "mode": "frontend",
+    "consoleIds": [
+      41
+    ],
+    "formats": [
+      "iso",
+      "pbp",
+      "bin",
+      "cue",
+      "chd",
+      "m3u"
+    ]
+  }
 }

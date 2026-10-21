@@ -7,4 +7,7 @@
 *.md text eol=lf
 *.patch whitespace=-trailing-space,-space-before-tab
 # Source snapshots retain the original emulator's formatting.
-store/cores/*/source/integration/** whitespace=-trailing-space,-space-before-tab
+store/*/*/cores/*/source/integration/** whitespace=-trailing-space,-space-before-tab
+
+# Preserve upstream snapshots byte for byte when changing target paths.
+store/*/*/cores/*/source/** -text

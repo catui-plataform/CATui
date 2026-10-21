@@ -19,5 +19,19 @@
     "m3u"
   ],
   "repository": "https://github.com/flyinghead/flycast",
-  "icon": "icon.png"
+  "icon": "icon.png",
+  "retroachievements": {
+    "supported": true,
+    "mode": "frontend",
+    "consoleIds": [
+      40
+    ],
+    "formats": [
+      "gdi",
+      "iso",
+      "bin",
+      "cue",
+      "m3u"
+    ]
+  }
 }

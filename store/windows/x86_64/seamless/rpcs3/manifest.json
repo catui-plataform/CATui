@@ -1,0 +1,35 @@
+{
+  "id": "rpcs3_standalone",
+  "title": "RPCS3",
+  "author": "RPCS3",
+  "system": "PS3",
+  "description": "PlayStation 3 emulator. Some games require installed PS3 firmware.",
+  "extensions": [
+    "elf",
+    "self",
+    "bin",
+    "iso"
+  ],
+  "filename": "rpcs3-windows-x86_64.zip",
+  "packageType": "archive",
+  "entryFilename": "rpcs3.exe",
+  "version": "0.0.43-20355",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "windows"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "repository": "https://github.com/RPCS3/rpcs3",
+  "icon": "icon.svg",
+  "upstreamRelease": "build-4024ea31e049f3205ae406eb3f37fe7625e1bc98",
+  "upstreamDownloadUrl": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-4024ea31e049f3205ae406eb3f37fe7625e1bc98/rpcs3-v0.0.43-20355-4024ea31_win64_msvc.7z",
+  "upstreamSha256": "b6e96273ae1e15708e081ff36b8bfb84242e3c8d957269f93946bee79bebdcba",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "RetroAchievements does not support this console."
+  }
+}
