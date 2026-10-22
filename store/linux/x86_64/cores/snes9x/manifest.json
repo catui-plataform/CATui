@@ -1,0 +1,19 @@
+{
+  "id": "snes9x",
+  "title": "Snes9x",
+  "author": "Snes9x",
+  "system": "SNES",
+  "description": "Super Nintendo emulator.",
+  "extensions": [
+    "smc",
+    "sfc",
+    "swc",
+    "fig",
+    "bs"
+  ],
+  "repository": "https://github.com/snes9xgit/snes9x",
+  "icon": "icon.png",
+  "filename": "snes9x_libretro.so",
+  "entryFilename": "snes9x_libretro.so",
+  "packageType": "so"
+}

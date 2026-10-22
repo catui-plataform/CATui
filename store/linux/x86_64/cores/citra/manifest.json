@@ -1,0 +1,19 @@
+{
+  "id": "citra",
+  "title": "Citra",
+  "author": "Citra",
+  "system": "3DS",
+  "description": "Nintendo 3DS emulator.",
+  "extensions": [
+    "3ds",
+    "3dsx",
+    "cci",
+    "cxi",
+    "cia"
+  ],
+  "repository": "https://github.com/citra-emu/citra",
+  "icon": "icon.png",
+  "filename": "citra_libretro.so",
+  "entryFilename": "citra_libretro.so",
+  "packageType": "so"
+}

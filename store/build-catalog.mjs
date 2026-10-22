@@ -47,8 +47,19 @@ for (const platform of platforms) {
         const bytes = readFileSync(join(directory, filename));
         if (bytes.length >= 100 * 1024 * 1024) throw new Error(`Package exceeds GitHub's file limit: ${key}`);
         const packageType = manifest.packageType || 'dll';
-        const magic = packageType === 'archive' ? '504b0304' : '4d5a';
-        if (bytes.subarray(0, magic.length / 2).toString('hex') !== magic) throw new Error(`Invalid package binary: ${key}`);
+        if (packageType === 'so') {
+          const machines = { x86_64: 62, x86_32: 3, arm64: 183, arm32: 40 };
+          const elfClass = ['x86_64', 'arm64'].includes(architecture) ? 2 : 1;
+          if (platform !== 'linux' || !filename.endsWith('.so') || entry !== filename ||
+              bytes.length < 64 || bytes.subarray(0, 4).toString('hex') !== '7f454c46' ||
+              bytes[4] !== elfClass || bytes[5] !== 1 || bytes.readUInt16LE(16) !== 3 ||
+              bytes.readUInt16LE(18) !== machines[architecture]) {
+            throw new Error(`Invalid Linux shared library or architecture: ${key}`);
+          }
+        } else {
+          const magic = packageType === 'archive' ? '504b0304' : '4d5a';
+          if (bytes.subarray(0, magic.length / 2).toString('hex') !== magic) throw new Error(`Invalid package binary: ${key}`);
+        }
         if (category === 'seamless' && (!entry.toLowerCase().endsWith('.exe') || packageType !== 'archive')) {
           throw new Error(`Seamless packages must specify the exact archived EXE: ${key}`);
         }

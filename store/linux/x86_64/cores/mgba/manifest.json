@@ -1,0 +1,17 @@
+{
+  "id": "mgba",
+  "title": "mGBA",
+  "author": "mGBA",
+  "system": "GBA",
+  "description": "Game Boy Advance emulator.",
+  "extensions": [
+    "gba",
+    "gb",
+    "gbc"
+  ],
+  "repository": "https://github.com/mgba-emu/mgba",
+  "icon": "icon.png",
+  "filename": "mgba_libretro.so",
+  "entryFilename": "mgba_libretro.so",
+  "packageType": "so"
+}

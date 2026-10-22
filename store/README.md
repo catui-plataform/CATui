@@ -1,8 +1,8 @@
 # Store
 
 CATui packages are organized as `<platform>/<architecture>/<category>/<emulator>/`.
-Current target: `windows/x86_64`. Categories are `cores` (Libretro) and `seamless`
-(complete native emulator distributions). Future targets can use `linux`, `android`,
+Current targets: `windows/x86_64` and `linux/x86_64`. Categories are `cores` (Libretro) and `seamless`
+(complete native emulator distributions). Future targets can use `android`,
 `macos`, and architectures `x86_64`, `x86_32`, `arm64`, `arm32`.
 
 `catalog.json` schema 2 declares each package's target, runtime, version, SHA-256,
@@ -12,10 +12,17 @@ the optional `catui-seamless` addon and a compatible native extension.
 
 To update a package:
 
-1. Replace its archive and update `windows/x86_64/<category>/<id>/manifest.json`.
+1. Replace its binary/archive and update `<platform>/<architecture>/<category>/<id>/manifest.json`.
 2. Run `node store/build-catalog.mjs`.
 3. Run `node store/build-catalog.mjs --check`.
 4. Publish all changed files and the generated catalog together.
+
+The initial Linux x86_64 test batch contains Citra, mGBA, Snes9x, Mesen and
+Genesis Plus GX, matching their Windows package IDs and metadata. Linux cores
+use unmodified `.so` binaries from the Libretro buildbot and `packageType: "so"`.
+Each `SOURCE.md` records the download URL and archive/binary checksums. The
+catalog builder validates ELF format, shared library type and CPU architecture.
+Publishing is for manual CATui testing and does not establish game compatibility.
 
 Core source archives and integration patches remain alongside their existing packages
 in `windows/x86_64/cores/<id>/source/`. Native distributions retain their complete

@@ -1,0 +1,18 @@
+{
+  "id": "mesen",
+  "title": "Mesen",
+  "author": "Mesen",
+  "system": "NES",
+  "description": "NES emulator.",
+  "extensions": [
+    "nes",
+    "fds",
+    "unf",
+    "unif"
+  ],
+  "repository": "https://github.com/SourMesen/Mesen2",
+  "icon": "icon.png",
+  "filename": "mesen_libretro.so",
+  "entryFilename": "mesen_libretro.so",
+  "packageType": "so"
+}

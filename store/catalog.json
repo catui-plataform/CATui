@@ -4,6 +4,239 @@
   "contentRef": "main",
   "items": [
     {
+      "id": "citra",
+      "title": "Citra",
+      "author": "Citra",
+      "system": "3DS",
+      "description": "Nintendo 3DS emulator.",
+      "extensions": [
+        "3ds",
+        "3dsx",
+        "cci",
+        "cxi",
+        "cia"
+      ],
+      "repository": "https://github.com/citra-emu/citra",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "filename": "citra_libretro.so",
+      "entryFilename": "citra_libretro.so",
+      "packageType": "so",
+      "coreId": "citra",
+      "category": "cores",
+      "runtime": "libretro",
+      "version": "19522df1df79",
+      "packageVersion": "",
+      "buildVersion": "19522df1df79",
+      "size": "31.4 MB",
+      "sizeBytes": 32976240,
+      "sha256": "19522df1df79d67c59eb34e2452a6024ac952e91f0bfbd1288bcf286b6c060dc",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/citra/citra_libretro.so",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/citra/icon.png",
+      "verified": true,
+      "retroachievements": {
+        "supported": false,
+        "mode": "unavailable",
+        "consoleIds": []
+      }
+    },
+    {
+      "id": "genesis_plus_gx",
+      "title": "Genesis Plus GX",
+      "author": "Genesis Plus GX",
+      "system": "Mega Drive",
+      "description": "Mega Drive emulator.",
+      "extensions": [
+        "md",
+        "gen",
+        "smd",
+        "bin"
+      ],
+      "repository": "https://github.com/ekeeke/Genesis-Plus-GX",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "filename": "genesis_plus_gx_libretro.so",
+      "entryFilename": "genesis_plus_gx_libretro.so",
+      "packageType": "so",
+      "coreId": "genesis_plus_gx",
+      "category": "cores",
+      "runtime": "libretro",
+      "version": "ca43fe7e4252",
+      "packageVersion": "",
+      "buildVersion": "ca43fe7e4252",
+      "size": "12.2 MB",
+      "sizeBytes": 12832952,
+      "sha256": "ca43fe7e4252d21d0cc230fe1f3a1b82d54781f5d72d194ff66e257db6943044",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/genesis_plus_gx/genesis_plus_gx_libretro.so",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/genesis_plus_gx/icon.png",
+      "verified": true,
+      "retroachievements": {
+        "supported": true,
+        "mode": "frontend",
+        "consoleIds": [
+          1,
+          11,
+          15
+        ]
+      }
+    },
+    {
+      "id": "mesen",
+      "title": "Mesen",
+      "author": "Mesen",
+      "system": "NES",
+      "description": "NES emulator.",
+      "extensions": [
+        "nes",
+        "fds",
+        "unf",
+        "unif"
+      ],
+      "repository": "https://github.com/SourMesen/Mesen2",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "filename": "mesen_libretro.so",
+      "entryFilename": "mesen_libretro.so",
+      "packageType": "so",
+      "coreId": "mesen",
+      "category": "cores",
+      "runtime": "libretro",
+      "version": "552f8ab6ac1f",
+      "packageVersion": "",
+      "buildVersion": "552f8ab6ac1f",
+      "size": "3.2 MB",
+      "sizeBytes": 3343872,
+      "sha256": "552f8ab6ac1fd08bd555f589eb999be73a469c79ccfa929f884adb2cf3366b43",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/mesen/mesen_libretro.so",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/mesen/icon.png",
+      "verified": true,
+      "retroachievements": {
+        "supported": true,
+        "mode": "frontend",
+        "consoleIds": [
+          7
+        ]
+      }
+    },
+    {
+      "id": "mgba",
+      "title": "mGBA",
+      "author": "mGBA",
+      "system": "GBA",
+      "description": "Game Boy Advance emulator.",
+      "extensions": [
+        "gba",
+        "gb",
+        "gbc"
+      ],
+      "repository": "https://github.com/mgba-emu/mgba",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "filename": "mgba_libretro.so",
+      "entryFilename": "mgba_libretro.so",
+      "packageType": "so",
+      "coreId": "mgba",
+      "category": "cores",
+      "runtime": "libretro",
+      "version": "c840f305825d",
+      "packageVersion": "",
+      "buildVersion": "c840f305825d",
+      "size": "3.2 MB",
+      "sizeBytes": 3314664,
+      "sha256": "c840f305825d07c9bec7a6ec18841073c4b539fd234f73623474f97c507f1cdc",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/mgba/mgba_libretro.so",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/mgba/icon.png",
+      "verified": true,
+      "retroachievements": {
+        "supported": true,
+        "mode": "frontend",
+        "consoleIds": [
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "id": "snes9x",
+      "title": "Snes9x",
+      "author": "Snes9x",
+      "system": "SNES",
+      "description": "Super Nintendo emulator.",
+      "extensions": [
+        "smc",
+        "sfc",
+        "swc",
+        "fig",
+        "bs"
+      ],
+      "repository": "https://github.com/snes9xgit/snes9x",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "filename": "snes9x_libretro.so",
+      "entryFilename": "snes9x_libretro.so",
+      "packageType": "so",
+      "coreId": "snes9x",
+      "category": "cores",
+      "runtime": "libretro",
+      "version": "9b2b6ea9d88f",
+      "packageVersion": "",
+      "buildVersion": "9b2b6ea9d88f",
+      "size": "2.7 MB",
+      "sizeBytes": 2841720,
+      "sha256": "9b2b6ea9d88f96c156590443ddd05ee56aaf4e495329a889c979921942717a31",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/snes9x/snes9x_libretro.so",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/cores/snes9x/icon.png",
+      "verified": true,
+      "retroachievements": {
+        "supported": true,
+        "mode": "frontend",
+        "consoleIds": [
+          3
+        ]
+      }
+    },
+    {
       "id": "cemu",
       "title": "Cemu",
       "author": "Cemu",
