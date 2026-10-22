@@ -1,0 +1,43 @@
+{
+  "id": "pcsx2_standalone",
+  "title": "PCSX2",
+  "author": "PCSX2",
+  "system": "PS2",
+  "description": "PlayStation 2 emulator. Requires BIOS.",
+  "extensions": [
+    "elf",
+    "iso",
+    "ciso",
+    "cue",
+    "bin",
+    "gz",
+    "chd",
+    "cso",
+    "zso",
+    "mdf",
+    "nrg",
+    "dump"
+  ],
+  "repository": "https://github.com/PCSX2/pcsx2",
+  "icon": "icon.png",
+  "version": "2.8.2",
+  "filename": "pcsx2-linux-x86_64.zip",
+  "entryFilename": "pcsx2-v2.8.2-linux-appimage-x64-Qt.AppImage",
+  "packageType": "archive",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "linux"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "upstreamRelease": "v2.8.2",
+  "upstreamDownloadUrl": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-linux-appimage-x64-Qt.AppImage",
+  "upstreamSha256": "0c46bb6a88aa2782b10853a7b07cf3387ba99cbef2b966372cd2315b8571abea",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "Standalone Seamless does not expose frontend memory integration."
+  }
+}

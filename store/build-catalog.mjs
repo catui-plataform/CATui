@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { basename, join, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { inflateRawSync } from 'node:zlib';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const destination = join(root, 'store', 'catalog.json');
@@ -17,6 +18,44 @@ const directories = path => readdirSync(path, { withFileTypes: true }).filter(e 
 const relativeFile = name => typeof name === 'string' && name.length > 0 && !name.includes('\\') &&
   !name.includes(':') && !name.startsWith('/') && name.split('/').every(p => p && p !== '.' && p !== '..');
 const items = [];
+// ZIP central-directory lookup: validate the declared Linux entry without
+// executing the upstream application or adding a package-manager dependency.
+function archivedEntry(bytes, entry) {
+  let end = -1;
+  for (let i = bytes.length - 22; i >= Math.max(0, bytes.length - 65557); --i) {
+    if (bytes.readUInt32LE(i) === 0x06054b50 && i + 22 + bytes.readUInt16LE(i + 20) === bytes.length) { end = i; break; }
+  }
+  if (end < 0 || bytes.readUInt16LE(end + 4) || bytes.readUInt16LE(end + 6)) throw new Error('Invalid/split ZIP archive.');
+  const count = bytes.readUInt16LE(end + 10);
+  let offset = bytes.readUInt32LE(end + 16);
+  const limit = offset + bytes.readUInt32LE(end + 12);
+  if (count === 0xffff || limit > end) throw new Error('Unsupported ZIP directory.');
+  const names = new Set();
+  let result;
+  for (let index = 0; index < count; ++index) {
+    if (offset + 46 > limit || bytes.readUInt32LE(offset) !== 0x02014b50) throw new Error('Invalid ZIP directory entry.');
+    const nameLength = bytes.readUInt16LE(offset + 28);
+    const next = offset + 46 + nameLength + bytes.readUInt16LE(offset + 30) + bytes.readUInt16LE(offset + 32);
+    if (next > limit) throw new Error('Truncated ZIP directory.');
+    const name = bytes.subarray(offset + 46, offset + 46 + nameLength).toString('utf8');
+    if (!relativeFile(name.replace(/\/$/, '')) || names.has(name)) throw new Error(`Invalid/duplicate ZIP path: ${name}`);
+    names.add(name);
+    if (name === entry) {
+      const method = bytes.readUInt16LE(offset + 10);
+      const compressed = bytes.readUInt32LE(offset + 20), size = bytes.readUInt32LE(offset + 24);
+      const local = bytes.readUInt32LE(offset + 42);
+      if (bytes.readUInt16LE(offset + 8) & 1 || size > 512 * 1024 * 1024 || local + 30 > bytes.length || bytes.readUInt32LE(local) !== 0x04034b50) throw new Error('Invalid ZIP payload.');
+      const start = local + 30 + bytes.readUInt16LE(local + 26) + bytes.readUInt16LE(local + 28);
+      if (start + compressed > bytes.length) throw new Error('Truncated ZIP payload.');
+      const data = bytes.subarray(start, start + compressed);
+      result = method === 0 ? Buffer.from(data) : method === 8 ? inflateRawSync(data, { maxOutputLength: size + 1 }) : undefined;
+      if (!result || result.length !== size) throw new Error('Unsupported/invalid ZIP compression.');
+    }
+    offset = next;
+  }
+  if (!result) throw new Error(`Declared executable missing from ZIP: ${entry}`);
+  return result;
+}
 const seen = new Set();
 const store = join(root, 'store');
 const platforms = directories(store).filter(p => ['windows', 'linux', 'android', 'macos'].includes(p)).sort();
@@ -60,8 +99,19 @@ for (const platform of platforms) {
           const magic = packageType === 'archive' ? '504b0304' : '4d5a';
           if (bytes.subarray(0, magic.length / 2).toString('hex') !== magic) throw new Error(`Invalid package binary: ${key}`);
         }
-        if (category === 'seamless' && (!entry.toLowerCase().endsWith('.exe') || packageType !== 'archive')) {
-          throw new Error(`Seamless packages must specify the exact archived EXE: ${key}`);
+        if (category === 'seamless') {
+          if (packageType !== 'archive' || platform === 'windows' && !entry.toLowerCase().endsWith('.exe')) {
+            throw new Error(`Seamless packages must specify the exact archived executable: ${key}`);
+          }
+          if (platform === 'linux') {
+            const binary = archivedEntry(bytes, entry);
+            const machines = { x86_64: 62, x86_32: 3, arm64: 183, arm32: 40 };
+            if (binary.length < 64 || binary.subarray(0, 4).toString('hex') !== '7f454c46' ||
+                binary[4] !== (['x86_64', 'arm64'].includes(architecture) ? 2 : 1) || binary[5] !== 1 ||
+                ![2, 3].includes(binary.readUInt16LE(16)) || binary.readUInt16LE(18) !== machines[architecture]) {
+              throw new Error(`Invalid Linux Seamless executable or architecture: ${key}`);
+            }
+          }
         }
         readFileSync(join(directory, icon));
         const sha256 = createHash('sha256').update(bytes).digest('hex');

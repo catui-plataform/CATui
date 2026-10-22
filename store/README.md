@@ -24,6 +24,16 @@ Each `SOURCE.md` records the download URL and archive/binary checksums. The
 catalog builder validates ELF format, shared library type and CPU architecture.
 Publishing is for manual CATui testing and does not establish game compatibility.
 
+Linux x86_64 Seamless packages now include Eden 0.2.1, shadPS4 0.20.0, Cemu 2.6,
+RPCS3 0.0.43-20371 and PCSX2 2.8.2. Each package contains its official Linux
+AppImage inside a ZIP, with the exact entry declared in the manifest. The
+shadPS4 ZIP is retained byte for byte; the other official AppImages are wrapped
+without altering their contents. These require the Linux Seamless backend,
+the updated Linux-aware CATui Store installer, and working AppImage/FUSE support.
+The installer restores execute permissions after extraction. The generator
+checks the ZIP entry's ELF format and CPU architecture before publishing.
+Upstream downloads and checksums are recorded in each `SOURCE.md`.
+
 Core source archives and integration patches remain alongside their existing packages
 in `windows/x86_64/cores/<id>/source/`. Native distributions retain their complete
 runtime files in ZIP format; `entryFilename` is relative to the ZIP root and is never

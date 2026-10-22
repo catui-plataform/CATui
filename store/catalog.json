@@ -237,6 +237,260 @@
       }
     },
     {
+      "id": "cemu_standalone",
+      "title": "Cemu",
+      "author": "Cemu",
+      "system": "Wii U",
+      "description": "Wii U emulator.",
+      "extensions": [
+        "wud",
+        "wux",
+        "wua",
+        "iso",
+        "rpx",
+        "elf",
+        "tmd"
+      ],
+      "filename": "cemu-linux-x86_64.zip",
+      "packageType": "archive",
+      "entryFilename": "Cemu-2.6-x86_64.AppImage",
+      "version": "2.6",
+      "runtime": "seamless",
+      "requiresAddon": "catui-seamless",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "repository": "https://github.com/cemu-project/Cemu",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "upstreamRelease": "v2.6",
+      "upstreamDownloadUrl": "https://github.com/cemu-project/Cemu/releases/download/v2.6/Cemu-2.6-x86_64.AppImage",
+      "upstreamSha256": "0c20c4aeb800bb13d9bab9474ef45a6f8fcde6402cad9b32ac2a1bbd03186313",
+      "retroachievements": {
+        "supported": false,
+        "mode": "unavailable",
+        "reason": "RetroAchievements does not support this console."
+      },
+      "coreId": "cemu_standalone",
+      "category": "seamless",
+      "packageVersion": "2.6",
+      "buildVersion": "3d07e2f591bc",
+      "size": "58.1 MB",
+      "sizeBytes": 60907158,
+      "sha256": "3d07e2f591bc60c02d3140405d8096415fb6cc15eea46626eb27aee177e40089",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/cemu/cemu-linux-x86_64.zip",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/cemu/icon.png",
+      "verified": true
+    },
+    {
+      "id": "eden_standalone",
+      "title": "Eden",
+      "author": "Eden",
+      "system": "Switch",
+      "description": "Nintendo Switch emulator. Requires your own keys and firmware.",
+      "extensions": [
+        "nsp",
+        "xci",
+        "nro",
+        "nca",
+        "nso"
+      ],
+      "filename": "eden-linux-x86_64.zip",
+      "packageType": "archive",
+      "entryFilename": "Eden-Linux-v0.2.1-amd64-clang-pgo.AppImage",
+      "version": "0.2.1",
+      "runtime": "seamless",
+      "requiresAddon": "catui-seamless",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "repository": "https://git.eden-emu.dev/eden-emu/eden",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "upstreamRelease": "v0.2.1",
+      "upstreamDownloadUrl": "https://stable.eden-emu.dev/v0.2.1/Eden-Linux-v0.2.1-amd64-clang-pgo.AppImage",
+      "upstreamSha256": "7a28bf988b0648831989722bdbaa90ab31371b403808199813e0ea7c8b25ba6d",
+      "retroachievements": {
+        "supported": false,
+        "mode": "unavailable",
+        "reason": "RetroAchievements does not support this console."
+      },
+      "coreId": "eden_standalone",
+      "category": "seamless",
+      "packageVersion": "0.2.1",
+      "buildVersion": "69d6ebc0867c",
+      "size": "65.6 MB",
+      "sizeBytes": 68829142,
+      "sha256": "69d6ebc0867c2cabf72f2f9e09e768f9181d2457cdc83ff982698ff187a0464d",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/eden/eden-linux-x86_64.zip",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/eden/icon.png",
+      "verified": true
+    },
+    {
+      "id": "pcsx2_standalone",
+      "title": "PCSX2",
+      "author": "PCSX2",
+      "system": "PS2",
+      "description": "PlayStation 2 emulator. Requires BIOS.",
+      "extensions": [
+        "elf",
+        "iso",
+        "ciso",
+        "cue",
+        "bin",
+        "gz",
+        "chd",
+        "cso",
+        "zso",
+        "mdf",
+        "nrg",
+        "dump"
+      ],
+      "repository": "https://github.com/PCSX2/pcsx2",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "version": "2.8.2",
+      "filename": "pcsx2-linux-x86_64.zip",
+      "entryFilename": "pcsx2-v2.8.2-linux-appimage-x64-Qt.AppImage",
+      "packageType": "archive",
+      "runtime": "seamless",
+      "requiresAddon": "catui-seamless",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "upstreamRelease": "v2.8.2",
+      "upstreamDownloadUrl": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-linux-appimage-x64-Qt.AppImage",
+      "upstreamSha256": "0c46bb6a88aa2782b10853a7b07cf3387ba99cbef2b966372cd2315b8571abea",
+      "retroachievements": {
+        "supported": false,
+        "mode": "unavailable",
+        "reason": "Standalone Seamless does not expose frontend memory integration."
+      },
+      "coreId": "pcsx2_standalone",
+      "category": "seamless",
+      "packageVersion": "2.8.2",
+      "buildVersion": "25db2eca79eb",
+      "size": "56.8 MB",
+      "sizeBytes": 59597539,
+      "sha256": "25db2eca79eb0dd877da2bf793e492e2a34081a016aea263c16d8315bcd7adf6",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/pcsx2/pcsx2-linux-x86_64.zip",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/pcsx2/icon.png",
+      "verified": true
+    },
+    {
+      "id": "rpcs3_standalone",
+      "title": "RPCS3",
+      "author": "RPCS3",
+      "system": "PS3",
+      "description": "PlayStation 3 emulator. Some games require installed PS3 firmware.",
+      "extensions": [
+        "elf",
+        "self",
+        "bin",
+        "iso"
+      ],
+      "filename": "rpcs3-linux-x86_64.zip",
+      "packageType": "archive",
+      "entryFilename": "rpcs3-v0.0.43-20371-d7b11777_linux64.AppImage",
+      "version": "0.0.43-20371",
+      "runtime": "seamless",
+      "requiresAddon": "catui-seamless",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "repository": "https://github.com/RPCS3/rpcs3",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "upstreamRelease": "build-d7b117777ff1273df082fb6a9eb35ef4732ec3da",
+      "upstreamDownloadUrl": "https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-d7b117777ff1273df082fb6a9eb35ef4732ec3da/rpcs3-v0.0.43-20371-d7b11777_linux64.AppImage",
+      "upstreamSha256": "ffcae9f81048a59e28128a8c2e3eacb1493cc35881ac14175f2de6290c39d9af",
+      "retroachievements": {
+        "supported": false,
+        "mode": "unavailable",
+        "reason": "RetroAchievements does not support this console."
+      },
+      "coreId": "rpcs3_standalone",
+      "category": "seamless",
+      "packageVersion": "0.0.43-20371",
+      "buildVersion": "f4bfd6a84f04",
+      "size": "79.0 MB",
+      "sizeBytes": 82814508,
+      "sha256": "f4bfd6a84f046708e515224817c4342d1a7a54316b947efcd4d97a068db1b84f",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/rpcs3/rpcs3-linux-x86_64.zip",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/rpcs3/icon.svg",
+      "verified": true
+    },
+    {
+      "id": "shadps4_standalone",
+      "title": "shadPS4",
+      "author": "shadPS4",
+      "system": "ps4",
+      "description": "PlayStation 4 emulator. Requires compatible extracted game content.",
+      "extensions": [
+        "pkg",
+        "fpkg",
+        "elf",
+        "self",
+        "iso",
+        "folder"
+      ],
+      "filename": "shadps4-linux-x86_64.zip",
+      "packageType": "archive",
+      "entryFilename": "Shadps4-sdl.AppImage",
+      "version": "0.20.0",
+      "runtime": "seamless",
+      "requiresAddon": "catui-seamless",
+      "platforms": [
+        "linux"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "repository": "https://github.com/shadps4-emu/shadPS4",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "upstreamRelease": "v.0.20.0",
+      "upstreamDownloadUrl": "https://github.com/shadps4-emu/shadPS4/releases/download/v.0.20.0/shadps4-linux-sdl-0.20.0.zip",
+      "upstreamSha256": "be25d0324cd7b74068d32cdb66fa1b7b1e7bb499b062be51c7006d27d41d4255",
+      "retroachievements": {
+        "supported": false,
+        "mode": "unavailable",
+        "reason": "RetroAchievements does not support this console."
+      },
+      "coreId": "shadps4_standalone",
+      "category": "seamless",
+      "packageVersion": "0.20.0",
+      "buildVersion": "be25d0324cd7",
+      "size": "31.7 MB",
+      "sizeBytes": 33229758,
+      "sha256": "be25d0324cd7b74068d32cdb66fa1b7b1e7bb499b062be51c7006d27d41d4255",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/shadps4/shadps4-linux-x86_64.zip",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "iconFile": "icon.png",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/linux/x86_64/seamless/shadps4/icon.png",
+      "verified": true
+    },
+    {
       "id": "cemu",
       "title": "Cemu",
       "author": "Cemu",

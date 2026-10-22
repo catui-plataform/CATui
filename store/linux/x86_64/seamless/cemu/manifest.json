@@ -1,0 +1,38 @@
+{
+  "id": "cemu_standalone",
+  "title": "Cemu",
+  "author": "Cemu",
+  "system": "Wii U",
+  "description": "Wii U emulator.",
+  "extensions": [
+    "wud",
+    "wux",
+    "wua",
+    "iso",
+    "rpx",
+    "elf",
+    "tmd"
+  ],
+  "filename": "cemu-linux-x86_64.zip",
+  "packageType": "archive",
+  "entryFilename": "Cemu-2.6-x86_64.AppImage",
+  "version": "2.6",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "linux"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "repository": "https://github.com/cemu-project/Cemu",
+  "icon": "icon.png",
+  "upstreamRelease": "v2.6",
+  "upstreamDownloadUrl": "https://github.com/cemu-project/Cemu/releases/download/v2.6/Cemu-2.6-x86_64.AppImage",
+  "upstreamSha256": "0c20c4aeb800bb13d9bab9474ef45a6f8fcde6402cad9b32ac2a1bbd03186313",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "RetroAchievements does not support this console."
+  }
+}

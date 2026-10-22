@@ -1,0 +1,36 @@
+{
+  "id": "eden_standalone",
+  "title": "Eden",
+  "author": "Eden",
+  "system": "Switch",
+  "description": "Nintendo Switch emulator. Requires your own keys and firmware.",
+  "extensions": [
+    "nsp",
+    "xci",
+    "nro",
+    "nca",
+    "nso"
+  ],
+  "filename": "eden-linux-x86_64.zip",
+  "packageType": "archive",
+  "entryFilename": "Eden-Linux-v0.2.1-amd64-clang-pgo.AppImage",
+  "version": "0.2.1",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "linux"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "repository": "https://git.eden-emu.dev/eden-emu/eden",
+  "icon": "icon.png",
+  "upstreamRelease": "v0.2.1",
+  "upstreamDownloadUrl": "https://stable.eden-emu.dev/v0.2.1/Eden-Linux-v0.2.1-amd64-clang-pgo.AppImage",
+  "upstreamSha256": "7a28bf988b0648831989722bdbaa90ab31371b403808199813e0ea7c8b25ba6d",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "RetroAchievements does not support this console."
+  }
+}
