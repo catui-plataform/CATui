@@ -1,16 +1,16 @@
 # Eglantine for Linux x86_64
 
-Official upstream pre-release: `build-92` (`37908985af9d080bc4795c16c8e49c7ef1d2a98b`)
+Official upstream pre-release: `nx2-build-15` (`2818f85a8f55079f687596b743996e34a12b36a7`)
 
-Download: https://github.com/Djihads80/Eglantine/releases/download/build-92/eglantine-37908985af9d080bc4795c16c8e49c7ef1d2a98b-linux-x86_64.AppImage
+Download: https://github.com/zortos293/Eglantine/releases/download/nx2-build-15/eglantine-nx2-build-15-linux-x86_64.AppImage
 
-Upstream AppImage SHA-256: `c2977f0330ed5279737e90cf3bc07dc376d53bfd7356ab965bbbf8e367555266`
+Upstream AppImage SHA-256: `75d17a211acff827138c774ba6969c3c6d8600af0690e8439007dbe775afca19`
 
-Store package SHA-256: `610a4bc207dd9d71abf2e665237021bdc2eb2be2d2fe7cd5ede0e1e6da05e700`
+Store package SHA-256: `d704cb64c834dd2bc01ebe476f4c936cfcc8ef3395a1789ebd9cbd47ea299701`
 
 Entry: `eden-cli`
 
-Entry SHA-256: `810ccecdb3643f11276709233e1d7ee329b134396f1fafe69d5e97088cf915f8`
+Entry SHA-256: `45109ae187ea6c2328bf9a6a31b2f77cea0bb77bc9daec439aef4001f71fde14`
 
 The package contains the unmodified `eden-cli` executable and its required shared
 libraries extracted from the official AppImage. CATui launches the SDL frontend

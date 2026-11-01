@@ -10,7 +10,7 @@
   "filename": "eglantine-linux-x86_64.zip",
   "packageType": "archive",
   "entryFilename": "eden-cli",
-  "version": "build-92",
+  "version": "nx2-build-15",
   "runtime": "seamless",
   "requiresAddon": "catui-seamless",
   "platforms": [
@@ -19,11 +19,11 @@
   "architectures": [
     "x86_64"
   ],
-  "repository": "https://github.com/Djihads80/Eglantine",
+  "repository": "https://github.com/zortos293/Eglantine",
   "icon": "icon.svg",
-  "upstreamRelease": "build-92",
-  "upstreamDownloadUrl": "https://github.com/Djihads80/Eglantine/releases/download/build-92/eglantine-37908985af9d080bc4795c16c8e49c7ef1d2a98b-linux-x86_64.AppImage",
-  "upstreamSha256": "c2977f0330ed5279737e90cf3bc07dc376d53bfd7356ab965bbbf8e367555266",
+  "upstreamRelease": "nx2-build-15",
+  "upstreamDownloadUrl": "https://github.com/zortos293/Eglantine/releases/download/nx2-build-15/eglantine-nx2-build-15-linux-x86_64.AppImage",
+  "upstreamSha256": "75d17a211acff827138c774ba6969c3c6d8600af0690e8439007dbe775afca19",
   "retroachievements": {
     "supported": false,
     "mode": "unavailable",
