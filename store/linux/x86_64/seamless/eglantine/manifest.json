@@ -1,0 +1,32 @@
+{
+  "id": "eglantine_standalone",
+  "title": "Eglantine",
+  "author": "Eglantine",
+  "system": "Switch 2",
+  "description": "Experimental Nintendo Switch 2 emulator for loose ExeFS dumps. Requires your own keys and firmware.",
+  "extensions": [
+    "folder"
+  ],
+  "filename": "eglantine-linux-x86_64.zip",
+  "packageType": "archive",
+  "entryFilename": "eden-cli",
+  "version": "build-92",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "linux"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "repository": "https://github.com/Djihads80/Eglantine",
+  "icon": "icon.svg",
+  "upstreamRelease": "build-92",
+  "upstreamDownloadUrl": "https://github.com/Djihads80/Eglantine/releases/download/build-92/eglantine-37908985af9d080bc4795c16c8e49c7ef1d2a98b-linux-x86_64.AppImage",
+  "upstreamSha256": "c2977f0330ed5279737e90cf3bc07dc376d53bfd7356ab965bbbf8e367555266",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "RetroAchievements does not support this console."
+  }
+}

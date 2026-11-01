@@ -10,7 +10,7 @@ const refIndex = process.argv.indexOf('--ref');
 const contentRef = refIndex >= 0 ? process.argv[refIndex + 1] : 'main';
 if (!contentRef || !/^[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(contentRef)) throw new Error('Invalid content ref.');
 const raw = `https://raw.githubusercontent.com/catui-plataform/CATui/${contentRef}/store`;
-const coreOrder = ['cemu', 'citra', 'dolphin', 'eden', 'flycast', 'genesis_plus_gx', 'melonds',
+const coreOrder = ['cemu', 'citra', 'dolphin', 'eden', 'eglantine', 'flycast', 'genesis_plus_gx', 'melonds',
   'mesen', 'mgba', 'mupen64plus_next', 'pcsx2', 'ppsspp', 'rpcs3', 'snes9x', 'swanstation', 'shadps4'];
 const raConsoles = { genesis_plus_gx: [1, 11, 15], melonds: [18], mesen: [7], mgba: [4, 5, 6],
   mupen64plus_next: [2], pcsx2: [21], ppsspp: [41], flycast: [40], snes9x: [3], swanstation: [12] };
