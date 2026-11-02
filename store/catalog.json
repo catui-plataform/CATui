@@ -1422,6 +1422,51 @@
       "verified": true
     },
     {
+      "id": "eglantine_standalone",
+      "title": "Eglantine",
+      "author": "Eglantine",
+      "system": "Switch 2",
+      "description": "Experimental Nintendo Switch 2 emulator for loose ExeFS dumps. Requires your own keys and firmware.",
+      "extensions": [
+        "folder"
+      ],
+      "filename": "eglantine-windows-x86_64.zip",
+      "packageType": "archive",
+      "entryFilename": "eden-cli.exe",
+      "version": "build-110",
+      "runtime": "seamless",
+      "requiresAddon": "catui-seamless",
+      "platforms": [
+        "windows"
+      ],
+      "architectures": [
+        "x86_64"
+      ],
+      "repository": "https://github.com/Djihads80/Eglantine",
+      "icon": "res://assets/images/catui/catui_placeholder.png",
+      "upstreamRelease": "build-110",
+      "upstreamDownloadUrl": "https://github.com/Djihads80/Eglantine/releases/download/build-110/eglantine-windows-x86_64-pgo-f6d03bc69d5bcda45bd054edda24521820c42deb.zip",
+      "upstreamSha256": "cbce4259e7996bcb40d636644adfb2f027f6a852af48dca8b5536bbc0c8fb4fc",
+      "retroachievements": {
+        "supported": false,
+        "mode": "unavailable",
+        "reason": "RetroAchievements does not support this console."
+      },
+      "coreId": "eglantine_standalone",
+      "category": "seamless",
+      "packageVersion": "build-110",
+      "buildVersion": "cbce4259e799",
+      "size": "61.9 MB",
+      "sizeBytes": 64868871,
+      "sha256": "cbce4259e7996bcb40d636644adfb2f027f6a852af48dca8b5536bbc0c8fb4fc",
+      "downloadUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/windows/x86_64/seamless/eglantine/eglantine-windows-x86_64.zip",
+      "platform": "windows",
+      "architecture": "x86_64",
+      "iconFile": "icon.svg",
+      "iconUrl": "https://raw.githubusercontent.com/catui-plataform/CATui/main/store/windows/x86_64/seamless/eglantine/icon.svg",
+      "verified": true
+    },
+    {
       "id": "rpcs3_standalone",
       "title": "RPCS3",
       "author": "RPCS3",
