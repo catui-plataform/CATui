@@ -37,6 +37,14 @@
 
 Core downloads and the catalog are in [`store/`](store/).
 
+## AI Usage
+
+Generative AI is strictly prohibited for artwork and creative assets. All CATui artwork, illustrations, visual assets, and other creative work are made by me or by human artists. I believe in supporting artists and human creativity.
+
+AI assisted tools may be used for development tasks such as research, debugging, and documentation. Be efficient, but not dumb.
+
+**Note on Store automation:** CATui is currently testing AI assisted automation to help maintain the Store, mainly by keeping emulator cores up to date. This automation may create commits and push updates to this repository. It covers only a small part of CATui (less than 1%), and I'm sharing this openly because transparency matters to me. <3
+
 ## Feedback
 
 Report bugs in Issues or join us on Discord.
