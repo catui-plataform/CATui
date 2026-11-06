@@ -1,15 +1,19 @@
-# Eglantine for Windows x86_64
+# Eglantine for windows x86_64
 
-Official upstream nx2 pre-release: `build-110` (`f6d03bc69d5bcda45bd054edda24521820c42deb`).
+Upstream release: `build-212` (`d6efc8ef0849bf7423fe0a96dace49a8a2dcc877`).
 
-Download: https://github.com/Djihads80/Eglantine/releases/download/build-110/eglantine-windows-x86_64-pgo-f6d03bc69d5bcda45bd054edda24521820c42deb.zip
+Download: https://github.com/Djihads80/Eglantine/releases/download/build-212/eglantine-windows-x86_64-pgo.zip
 
-Original and Store ZIP SHA-256: `cbce4259e7996bcb40d636644adfb2f027f6a852af48dca8b5536bbc0c8fb4fc`
+Upstream SHA-256: `95530f5a270e9ab6a74a139f8dc2cf2e33d089ec2223786ccd5c0c980881a1dc`
+
+Store ZIP SHA-256: `95530f5a270e9ab6a74a139f8dc2cf2e33d089ec2223786ccd5c0c980881a1dc`
 
 Entry: `eden-cli.exe`
 
-The upstream PGO ZIP is distributed unchanged and includes its runtime DLLs.
-Corresponding source and GPL-3.0 license: https://github.com/Djihads80/Eglantine/tree/f6d03bc69d5bcda45bd054edda24521820c42deb
+Entry SHA-256: `80f493f221e7605ea31f40cc62444f523587b8a72135dbf3ffb8018176a67851`
 
-The icon is Eglantine's upstream `dist/icon_variations/original_small.svg`.
-Package integrity does not establish game compatibility.
+The official upstream PGO ZIP is distributed unchanged with all its runtime DLLs.
+
+Corresponding source and license: https://github.com/Djihads80/Eglantine/tree/d6efc8ef0849bf7423fe0a96dace49a8a2dcc877
+
+The icon is the project's upstream branding asset. No games, keys or firmware are included. Integrity checks do not establish game compatibility.

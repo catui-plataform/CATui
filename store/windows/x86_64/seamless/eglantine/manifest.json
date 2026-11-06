@@ -3,14 +3,15 @@
   "title": "Eglantine",
   "author": "Eglantine",
   "system": "Switch 2",
-  "description": "Experimental Nintendo Switch 2 emulator for loose ExeFS dumps. Requires your own keys and firmware.",
+  "description": "Experimental Nintendo Switch 2 emulator for NUP packages and loose ExeFS dumps. Requires your own keys and firmware.",
   "extensions": [
-    "folder"
+    "folder",
+    "nup"
   ],
   "filename": "eglantine-windows-x86_64.zip",
   "packageType": "archive",
   "entryFilename": "eden-cli.exe",
-  "version": "build-110",
+  "version": "build-212",
   "runtime": "seamless",
   "requiresAddon": "catui-seamless",
   "platforms": [
@@ -21,9 +22,9 @@
   ],
   "repository": "https://github.com/Djihads80/Eglantine",
   "icon": "icon.svg",
-  "upstreamRelease": "build-110",
-  "upstreamDownloadUrl": "https://github.com/Djihads80/Eglantine/releases/download/build-110/eglantine-windows-x86_64-pgo-f6d03bc69d5bcda45bd054edda24521820c42deb.zip",
-  "upstreamSha256": "cbce4259e7996bcb40d636644adfb2f027f6a852af48dca8b5536bbc0c8fb4fc",
+  "upstreamRelease": "build-212",
+  "upstreamDownloadUrl": "https://github.com/Djihads80/Eglantine/releases/download/build-212/eglantine-windows-x86_64-pgo.zip",
+  "upstreamSha256": "95530f5a270e9ab6a74a139f8dc2cf2e33d089ec2223786ccd5c0c980881a1dc",
   "retroachievements": {
     "supported": false,
     "mode": "unavailable",

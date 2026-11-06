@@ -1,22 +1,19 @@
-# Eglantine for Linux x86_64
+# Eglantine for linux x86_64
 
-Official upstream pre-release: `nx2-build-15` (`2818f85a8f55079f687596b743996e34a12b36a7`)
+Upstream release: `build-212` (`d6efc8ef0849bf7423fe0a96dace49a8a2dcc877`).
 
-Download: https://github.com/zortos293/Eglantine/releases/download/nx2-build-15/eglantine-nx2-build-15-linux-x86_64.AppImage
+Download: https://github.com/Djihads80/Eglantine/releases/download/build-212/eglantine-linux-x86_64.AppImage
 
-Upstream AppImage SHA-256: `75d17a211acff827138c774ba6969c3c6d8600af0690e8439007dbe775afca19`
+Upstream SHA-256: `38815ac9f006ed7f1d3218c969da4fce2e9a2f782ee4ab5afcbd63bef74cf2e5`
 
-Store package SHA-256: `d704cb64c834dd2bc01ebe476f4c936cfcc8ef3395a1789ebd9cbd47ea299701`
+Store ZIP SHA-256: `9dee97de14ba0b3d953ccea1f967d387dfad3c7b2ff67a602ccb7eae8750483a`
 
 Entry: `eden-cli`
 
-Entry SHA-256: `45109ae187ea6c2328bf9a6a31b2f77cea0bb77bc9daec439aef4001f71fde14`
+Entry SHA-256: `22e5043b59c4547d18a1feb9b72b143b571ce205ca258e70ac27b6e08eeb3223`
 
-The package contains the unmodified `eden-cli` executable and its required shared
-libraries extracted from the official AppImage. CATui launches the SDL frontend
-directly because the Seamless capture does not need Eglantine's Qt library UI.
+The unmodified SDL executable and its transitive bundled shared libraries were extracted from the official AppImage. CATui sets LD_LIBRARY_PATH to the package lib directory.
 
-The icon is Eglantine's upstream `dist/icon_variations/original_small.svg` asset.
+Corresponding source and license: https://github.com/Djihads80/Eglantine/tree/d6efc8ef0849bf7423fe0a96dace49a8a2dcc877
 
-Requires glibc 2.39 or newer and the Linux CATui Seamless backend. Package
-integrity and installation validation do not establish game compatibility.
+The icon is the project's upstream branding asset. No games, keys or firmware are included. Integrity checks do not establish game compatibility.

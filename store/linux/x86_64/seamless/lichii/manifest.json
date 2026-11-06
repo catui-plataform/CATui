@@ -1,0 +1,33 @@
+{
+  "id": "lichii_standalone",
+  "title": "Lichii",
+  "author": "Lichii",
+  "system": "Switch 2",
+  "description": "Experimental Nintendo Switch 2 emulator for NUP packages and loose ExeFS dumps. Requires your own keys and firmware.",
+  "extensions": [
+    "folder",
+    "nup"
+  ],
+  "filename": "lichii-linux-x86_64.zip",
+  "packageType": "archive",
+  "entryFilename": "eden-cli",
+  "version": "build-88",
+  "runtime": "seamless",
+  "requiresAddon": "catui-seamless",
+  "platforms": [
+    "linux"
+  ],
+  "architectures": [
+    "x86_64"
+  ],
+  "repository": "https://github.com/zortos293/Lichii",
+  "icon": "icon.png",
+  "upstreamRelease": "build-88",
+  "upstreamDownloadUrl": "https://github.com/zortos293/Lichii/releases/download/build-88/lichii-linux-x86_64.AppImage",
+  "upstreamSha256": "8ddfcb03cffb9761d1532751eb6e68a1cb8a225da38ac1a55b6fe5b190691be0",
+  "retroachievements": {
+    "supported": false,
+    "mode": "unavailable",
+    "reason": "RetroAchievements does not support this console."
+  }
+}

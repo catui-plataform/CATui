@@ -48,3 +48,11 @@ unavailable. Reference: https://docs.retroachievements.org/general/emulator-supp
 CATui always reads the published catalog and downloads packages from this repository.
 It does not ship a fallback package inventory. If the catalog has no matching target,
 the corresponding Store category is empty. Installed runtimes remain on the user's machine.
+
+Switch 2 packages include Lichii `build-88` and Eglantine `build-212`, each with
+its own package ID and settings. Both declare `.nup` and loose ExeFS (`folder`)
+content. Linux packages contain the upstream SDL executable and its bundled
+shared-library dependencies; Windows entry points remain `eden-cli.exe`.
+Lichii's Windows package excludes the Qt GUI executable to stay below GitHub's file limit; the supplied DLL/plugin runtime is retained. See each package's
+`SOURCE.md` for the exact source revision, release and hashes. NUP discovery
+and Lichii launch require an updated CATui application.
